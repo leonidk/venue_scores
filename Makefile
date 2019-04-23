@@ -1,6 +1,6 @@
 
 
-all: faculty-affiliations.csv download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/dblp-2019-01-01.xml.gz download/dblp-2017-08-29.dtd dblp-aliases.csv csrankings.csv download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
+all: useful_papers.pkl.gz download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/dblp-2019-01-01.xml.gz download/dblp-2017-08-29.dtd dblp-aliases.csv csrankings.csv download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
 .PHONY: all
 
 dblp-aliases.csv: 
@@ -29,6 +29,12 @@ download/dblp-2017-08-29.dtd: |download
 faculty-affiliations.csv: csrankings.csv
 	python3 gen_fac_affil.py 
 
+parsed_files.pkl.gz: faculty-affiliations.csv download/dblp-2019-01-01.xml.gz download/dblp-2017-08-29.dtd
+	python3 my_dblp_parser.py
+
+useful_papers.pkl.gz: parsed_files.pkl.gz
+	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleanup_venues.ipynb
+
 # folder for downloading
 download/nsf: | download
 	mkdir -p $@
@@ -37,10 +43,7 @@ download:
 	mkdir -p $@
 
 nsf2.pkl: download/nsffile
-	jupyter nbconvert --to notebook --execute parse_nsf.ipynb
-
-nsf2.pkl: download/nsffile
-	jupyter nbconvert --to notebook --execute parse_nsf.ipynb
+	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute parse_nsf.ipynb
 
 acm2017/all_professors.xlsx:
 	cd acm2017 && wget -nc http://www.dabi.temple.edu/~vucetic/CSranking/raw_data/all_professors.xlsx
