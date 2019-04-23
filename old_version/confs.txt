@@ -1,0 +1,30 @@
+AAAI,2.9431
+NIPS,2.9176
+ICML,1.9765
+I. J. Robotics Res.,1.6662
+IROS,1.5352
+ICRA,1.4963
+CVPR,1.3525
+SIGGRAPH,1.2690
+ICCV,1.1870
+International Journal of Computer Vision,0.7171
+ISER,0.6875
+Comput. Graph. Forum,0.6759
+Robotics: Science and Systems,0.6085
+Graphics Interface,0.5448
+ECCV (1),0.5316
+BMVC,0.4987
+AISTATS,0.4300
+CRV,0.3423
+WACV,0.3157
+Symposium on Geometry Processing,0.2355
+SIGGRAPH Asia,0.2075
+Shape Modeling International,0.1886
+Humanoids,0.1861
+HRI,0.1699
+ECCV,0.1077
+Canadian Conference on AI,0.0962
+ECCV (8),0.0043
+CoRR,0.0000
+CoRL,-0.0124
+3DV,-0.0337
