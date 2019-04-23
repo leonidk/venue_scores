@@ -34,7 +34,7 @@ parsed_files.pkl.gz: faculty-affiliations.csv download/dblp-2019-01-01.xml.gz do
 
 useful_papers.pkl.gz: parsed_files.pkl.gz
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleanup_venues.ipynb
-
+	rm cleanup_venues.nbconvert.ipynb
 # folder for downloading
 download/nsf: | download
 	mkdir -p $@
@@ -44,6 +44,7 @@ download:
 
 nsf2.pkl: download/nsffile
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute parse_nsf.ipynb
+	rm parse_nsf.nbconvert.ipynb
 
 acm2017/all_professors.xlsx:
 	cd acm2017 && wget -nc http://www.dabi.temple.edu/~vucetic/CSranking/raw_data/all_professors.xlsx
