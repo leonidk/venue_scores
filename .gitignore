@@ -2,6 +2,8 @@ download/
 .vscode/
 *.csv
 .DS_Store
+*.pkl
+
 acm2017/*.xlsx
 # Byte-compiled / optimized / DLL files
 __pycache__/
