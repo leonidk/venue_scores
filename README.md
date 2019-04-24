@@ -3,11 +3,13 @@ This is the source code and project history for the following publication
 
 **Venue Analytics: A Simple Alternative to Citation-Based Metrics** by Leonid Keselman
 
-This paper proposes an automatic pipeline for ranking and organizing academic conferences in Computer Science. 
+This paper proposes an automatic pipeline for ranking and organizing academic conferences in Computer Science. It uses all the data from [DBLP](https://dblp.org/), featuring millions of authors, millions of papers and thousands of publication venues. 
 * For ranking, the basic contribution is to formulate conference ranking as a linear regression task, from publication history to targets like NSF Grant Amount, Faculty Status, or Salary. These conference rankings can vary over time, and be used to evaluate individual academics, universities as well. This also includes a PageRank baseline for author and conference ranking.
 * For organizing, there is a proposed method for organizing venues into groups based on a lower dimensional embedding based on the author x venues matrix; this allows for natural data-driven clusters such as Graphics, AI, ML, Vision, PL, etc. 
 * These rankings do not require or depend on citation data, are fairly robust to changing the regression targets, and can be used to evaluate/organize anyone who has ever published a paper in Computer Science. These rankings resemble citation-based metrics like h-index, despite not using citation data. 
-* The university rankings implied by our venue scores correlate highly with peer assesement of university rankings like US News. 
+* University rankings implied by our scores correlate highly with peer assesement of university rankings (e.g. US News).
+* These produced scores can be used to perform interesting queries about academic value and relationships. The venue-level and year-level granularity of these rankings, along with faculty affiliation data from CRankings, allows for filtering and analysis to ask questions such as "Which University produces the most value in the subfields of Robotics, Computer Vision and Machine Learning in the years 2005 to 2015?". We can also produce nearest neighbors for any Computer Science academic to find authors who publish a similiar distribution of work, even if they publish in different conferences.
+* Preprint archives and short papers have been excluded from most of our analysis via a filter (see pipeline information below). However, you're free to fork this project and add it back in if you'd like! 
 * See the paper for more technical details. 
 
 ## overview
