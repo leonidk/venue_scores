@@ -11,9 +11,7 @@ The dependencies for this project are Jupyter Notebooks with Python3 and numpy, 
 * `cluster_new.ipynb` clusters conferences into categories
 
 ### extra files
-* `acm2017` contains data files for processing and aligning [CSRankings](https://github.com/emeryberger/CSrankings) data with [ScholarRank](http://www.dabi.temple.edu/~vucetic/CSranking/details/) data. 
 * `download` stores downloaded files
 * `old_version` contains the first version of this codebase, mostly for historical reference
-* `uni_rank_*.csv` rankings contain university ranking data from many sources, all with consistent university naming.
-* `correlation_cleaned.csv` contains the dataset of CMU faculty members with their traditional ranking measures.
-* `traditional_conf_scores.csv` contains the traditional conference ranking data. 
+* `old_ranks` contains other ranking data. Including `uni_rank_*.csv`, which are rankings contain university ranking data from many sources, all with consistent university naming. `correlation_cleaned.csv` contains the dataset of CMU faculty members with their traditional ranking measures. `traditional_conf_scores.csv` contains the traditional conference ranking data (along with `msar.json`). `ranks.csv` is a snapshot of the CSRankings ranks from our development time. `r1.csv` is a list of all R1 Research Universities. `faculty_affil_scholar.csv` contains the data parsed from [ScholarRank](http://www.dabi.temple.edu/~vucetic/CSranking/details/). 
+* `acm2017` contains data files for processing and aligning [CSRankings](https://github.com/emeryberger/CSrankings) data with [ScholarRank](http://www.dabi.temple.edu/~vucetic/CSranking/details/) data. 
