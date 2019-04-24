@@ -1,3 +1,6 @@
+# Large swaths of this file are from Emery Berger and his CSRankings project
+# https://github.com/emeryberger/CSrankings
+# The parsing however is done straight from a DBLP snapshot with lxml, without any xmllint
 from lxml import etree
 from datetime import datetime
 import csv
