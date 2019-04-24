@@ -1,0 +1,174 @@
+﻿University,ID,school
+ Carnegie Mellon University,11,Carnegie Mellon University
+ Massachusetts Institute of Technology,44,Massachusetts Institute of Technology
+ Stanford University,75,Stanford University
+ University of California - Berkeley,92,University of California - Berkeley
+ Cornell University,19,Cornell University
+ Georgia Institute of Technology,30,Georgia Institute of Technology
+ University of Washington,160,University of Washington
+ University of California - Los Angeles,95,University of California - Los Angeles
+ University of California - San Diego,97,University of California - San Diego
+ Columbia University,18,Columbia University
+ Princeton University,69,Princeton University
+ University of Illinois - Urbana - Champaign,115,Univ. of Illinois at Urbana-Champaign
+ University of Michigan - Ann Arbor,128,University of Michigan
+ Johns Hopkins University,37,Johns Hopkins University
+ New York University,54,New York University
+ University of Maryland - College Park,123,University of Maryland - College Park
+ Yale University,175,Yale University
+ University of Southern California,149,University of Southern California
+ University of Wisconsin - Madison,161,University of Wisconsin - Madison
+ California Institute of Technology,10,California Institute of Technology
+ Harvard University,32,Harvard University
+ University of Massachusetts - Amherst,124,University of Massachusetts Amherst
+ University of Pennsylvania,144,University of Pennsylvania
+ University of Texas - Austin,153,University of Texas at Austin
+ Duke University,23,Duke University
+ University of California - Santa Barbara,98,University of California - Santa Barbara
+ Brown University,8,Brown University
+ University of California - Davis,93,University of California - Davis
+ University of California - Santa Cruz,99,University of California - Santa Cruz
+ University of Chicago,101,University of Chicago
+ University of North Carolina - Chapel Hill,138,University of North Carolina
+ Pennsylvania State University - University Park,67,Pennsylvania State University
+ University of California - Irvine,94,University of California - Irvine
+ University of Minnesota - Twin Cities,129,University of Minnesota
+ Purdue University - West Lafayette,70,Purdue University
+ Rice University,72,Rice University
+ Rutgers - The State University of New Jersey - New Brunswick,73,Rutgers University
+ Stony Brook University - SUNY,77,Stony Brook University
+ University of California - Riverside,96,University of California - Riverside
+ Boston University,5,Boston University
+ Northeastern University,58,Northeastern University
+ University of Arizona,89,University of Arizona
+ Northwestern University,59,Northwestern University
+ Ohio State University,62,Ohio State University
+ University of Virginia,159,University of Virginia
+ Colorado State University,17,Colorado State University
+ Indiana University - Bloomington,35,Indiana University
+ Michigan State University,45,Michigan State University
+ University at Buffalo - SUNY,85,University at Buffalo
+ University of Colorado - Boulder,103,University of Colorado Boulder
+ University of Rochester,146,University of Rochester
+ University of Tennessee - Knoxville,151,University of Tennessee
+ University of Utah,158,University of Utah
+ Virginia Tech,167,Virginia Tech
+ Arizona State University,2,Arizona State University
+ George Mason University,28,George Mason University
+ North Carolina State University,56,North Carolina State University
+ Texas A&M University - College Station,80,Texas A&M University
+ University of Texas - Dallas,154,University of Texas at Dallas
+ Vanderbilt University,165,Vanderbilt University
+ Washington University in St. Louis,170,Washington University in St. Louis
+ College of William and Mary,15,College of William and Mary
+ Rensselaer Polytechnic Institute,71,Rensselaer Polytechnic Institute
+ University of Pittsburgh,145,University of Pittsburgh
+ Dartmouth College,20,Dartmouth College
+ Lehigh University,41,Lehigh University
+ Portland State University,68,Portland State University 
+ University of Florida,109,University of Florida
+ University of Illinois - Chicago,114,University of Illinois at Chicago
+ University of Maryland - Baltimore County,122,Univ. of Maryland - Baltimore County
+ University of Notre Dame,141,University of Notre Dame
+ University of Texas - Arlington,152,University of Texas at Arlington
+ CUNY Graduate School and University Center,9,CUNY
+ Temple University,79,Temple University
+ University of Central Florida,100,University of Central Florida
+ University of Nebraska - Lincoln,133,University of Nebraska
+ Illinois Institute of Technology,33,Illinois Institute of Technology
+ University of Delaware,107,University of Delaware
+ University of South Florida,148,University of South Florida
+ Case Western Reserve University,12,Case Western Reserve University
+ Drexel University,22,Drexel University
+ New Jersey Institute of Technology,51,NJIT
+ Tufts University,83,Tufts University
+ University of Houston,112,University of Houston
+ University of Memphis,127,University of Memphis 
+ University of Missouri,131,University of Missouri 
+ University of New Mexico,136,University of New Mexico
+ Wayne State University,171,Wayne State University
+ Worcester Polytechnic Institute,174,Worcester Polytechnic Institute
+ Brandeis University,6,Brandeis University
+ Brigham Young University,7,Brigham Young University
+ Georgia State University,31,Georgia State University
+ Oregon State University,66,Oregon State University
+ University of Connecticut,106,University of Connecticut
+ University of Iowa,116,University of Iowa
+ University of Kansas,117,University of Kansas
+ University of Texas - San Antonio,156,University of Texas at San Antonio
+ West Virginia University,172,West Virginia University 
+ Binghamton University - SUNY,4,Binghamton University
+ Clemson University,14,Clemson University
+ Florida International University,26,Florida International University
+ Iowa State University,36,Iowa State University
+ Louisiana State University - Baton Rouge,42,Louisiana State University - Baton Rouge 
+ Missouri University of Science & Technology,48,Missouri University of Technology
+ Syracuse University,78,Syracuse University 
+ University at Albany - SUNY,84,University at Albany - SUNY 
+ University of Georgia,110,University of Georgia
+ University of Hawaii - Manoa,111,University of Hawaii at Manoa
+ University of Kentucky,118,University of Kentucky
+ University of Oregon,143,University of Oregon
+ University of South Carolina,147,University of South Carolina
+ Florida Atlantic University,24,Florida Atlantic University 
+ Florida State University,27,Florida State University
+ George Washington University,29,George Washington University
+ Stevens Institute of Technology,76,Stevens Institute of Technology
+ University of Massachusetts - Lowell,126,University of Massachusetts Lowell
+ Colorado School of Mines,16,Colorado School of Mines
+ DePaul University,21,DePaul University 
+ Naval Postgraduate School,50,Naval Postgraduate School
+ Old Dominion University,64,Old Dominion University
+ University of Alabama,86,University of Alabama 
+ University of Alabama - Birmingham,87,University of Alabama - Birmingham 
+ University of Arkansas - Fayetteville,90,University of Arkansas
+ University of Maine,121,University of Maine 
+ University of Massachusetts - Boston,125,University of Massachusetts Boston
+ University of Tulsa,157,University of Tulsa 
+ Virginia Commonwealth University,166,Virginia Commonwealth University
+ Washington State University,169,Washington State University
+ Claremont Graduate University,13,Claremont Graduate University 
+ Kansas State University,38,Kansas State University
+ New Mexico State University,53,New Mexico State University
+ Oakland University,61,Oakland University 
+ University of Colorado - Colorado Springs,104,Univ. of Colorado Colorado Springs
+ University of Nevada - Reno,135,University of Nevada - Reno 
+ University of North Carolina - Charlotte,139,University of North Carolina - Charlotte 
+ University of Oklahoma,142,University of Oklahoma 
+ University of Texas - El Paso,155,University of Texas - El Paso 
+ Oregon Health and Science University,65,OHSU
+ University of Cincinnati,102,University of Cincinnati 
+ University of Denver,108,University of Denver
+ University of Louisiana - Lafayette,119,University of Louisiana - Lafayette 
+ University of Louisville,120,University of Louisville 
+ University of North Texas,140,University of North Texas
+ University of Wisconsin - Milwaukee,162,University of Wisconsin - Milwaukee 
+ Utah State University,164,Utah State University 
+ Auburn University,3,Auburn University
+ Florida Institute of Technology,25,Florida Institute of Technology 
+ Kent State University,39,Kent State University 
+ Texas Tech University,81,Texas Tech University 
+ University of Alabama - Huntsville,88,University of Alabama - Huntsville 
+ University of Arkansas - Little Rock,91,University of Arkansas - Little Rock 
+ University of New Orleans,137,University of New Orleans 
+ Mississippi State University,47,Mississippi State University 
+ Montana State University,49,Montana State University 
+ Southern Methodist University,74,Southern Methodist University 
+ University of Mississippi,130,University of Mississippi 
+ University of Missouri - Kansas City,132,University of Missouri - Kansas City 
+ University of Wyoming,163,University of Wyoming 
+ Western Michigan University,173,Western Michigan University 
+ Air Force Institute of Technology,1,Air Force Institute of Technology 
+ Michigan Technological University,46,Michigan Technological University 
+ North Dakota State University,57,North Dakota State University 
+ Towson University,82,Towson University 
+ University of Idaho,113,University of Idaho
+ University of Southern Mississippi,150,University of Southern Mississippi 
+ New Mexico Institute of Mining and Technology,52,New Mexico Institute of Mining and Technology 
+ Nova Southeastern University,60,Nova Southeastern University 
+ Oklahoma State University,63,Oklahoma State University 
+ University of Colorado - Denver,105,University of Colorado - Denver 
+ University of Nebraska - Omaha,134,University of Nebraska - Omaha 
+ Louisiana Tech University,43,Louisiana Tech University 
+ Indiana State University,34,Indiana State University 
+ LIU Post,40,LIU Post 
