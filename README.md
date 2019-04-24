@@ -3,6 +3,8 @@ This is the source code and project history for the following publication
 
 **Venue Analytics: A Simple Alternative to Citation-Based Metrics** by Leonid Keselman
 
+This paper proposes an automatic pipeline for ranking and organizing academic conferences in Computer Science. For ranking, the basic contribution is to formulate conference ranking as a linear regression task, from publication history to targets like NSF Grant Amount, Faculty Status, or Salary. These conference rankings can vary over time, and be used to evaluate individual academics, universities as well. This also includes a PageRank baseline for author and conference ranking. Additionally, there is a proposed method for organizing publication venues into groups based on a lower dimensional embedding based on the author x venues matrix; this allows for natural data-driven clusters such as Graphics, AI, ML, Vision, PL, etc. 
+
 ## overview
 The dependencies for this project are Jupyter Notebooks with Python3 and numpy, scipy, pandas, lxml and scikit-learn libraries. Run `make` to download all of the appropriate data from DBLP, [CSRankings](https://github.com/emeryberger/CSrankings), the NSF, Transparent California, and Scholar Rank. The Makefile script will then pre-process the data (using `my_dblp_parser.py` and `cleanup_venues.ipynb`) into three main datafiles, `useful_authors_list.pkl.gz useful_papers.pkl.gz useful_venue_list.pkl.gz`.  Then the following programs are useful in generating rankings and clusterings
 * `cleaned_venues_to_weights.ipynb` generates conference rankings using a regression function. The top notebook block contains a variety of settings and hyper-parameters to chose what dataset to fit.
