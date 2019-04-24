@@ -1,0 +1,174 @@
+,Rank, University, Size, M10, G10, P10, C40, C60, C80, USN, Scholar, ID,University,ID,school
+0,1, University of California - Berkeley  ,68,375.0,351.2308,0.829134,57,54,38,5.0,5.077428,92,University of California - Berkeley,92,University of California - Berkeley
+1,2, Massachusetts Institute of Technology  ,97,306.0,285.9102,0.791046,72,66,45,5.0,5.0716529999999995,44,Massachusetts Institute of Technology,44,Massachusetts Institute of Technology
+2,3, Stanford University  ,55,395.0,425.0067,0.897185,46,43,35,5.0,5.024753,75,Stanford University,75,Stanford University
+3,4, Carnegie Mellon University  ,143,218.0,199.581,0.7201569999999999,105,74,48,5.0,5.022005,11,Carnegie Mellon University,11,Carnegie Mellon University
+4,5, Cornell University  ,75,216.0,228.324,0.746838,50,41,23,4.5,4.413652,19,Cornell University,19,Cornell University
+5,6, Georgia Institute of Technology  ,97,167.0,139.3444,0.634487,66,48,23,4.3,4.308927,30,Georgia Institute of Technology,30,Georgia Institute of Technology
+6,7, University of Washington  ,56,232.0,239.2134,0.77112,40,31,20,4.5,4.269653,160,University of Washington,160,University of Washington
+7,8, University of California - San Diego  ,60,203.5,192.2067,0.70704,47,36,24,4.0,4.237753,97,University of California - San Diego,97,University of California - San Diego
+8,9, University of California - Los Angeles  ,44,206.0,242.8607,0.743671,37,28,17,4.1,4.161214,95,University of California - Los Angeles,95,University of California - Los Angeles
+9,10, University of Michigan - Ann Arbor  ,59,235.0,174.7816,0.69503,40,31,20,4.1,4.142708,128,University of Michigan - Ann Arbor,128,University of Michigan
+10,11, Princeton University  ,35,285.0,232.2026,0.766528,27,23,19,4.4,4.1180010000000005,69,Princeton University,69,Princeton University
+11,12, Columbia University  ,45,218.0,205.5763,0.7146779999999999,35,27,18,4.0,4.079373,18,Columbia University,18,Columbia University
+12,13, University of Illinois - Urbana - Champaign  ,63,169.0,162.6681,0.674045,45,34,14,4.6,4.0593449999999995,115,University of Illinois - Urbana - Champaign,115,Univ. of Illinois at Urbana-Champaign
+13,14, Yale University  ,21,319.0,261.4688,0.80347,19,16,12,3.7,4.027897,175,Yale University,175,Yale University
+14,15, New York University  ,57,204.0,154.0946,0.67309,39,31,14,3.4,4.024541,54,New York University,54,New York University
+15,16, University of Maryland - College Park  ,48,182.0,174.2863,0.689666,37,32,12,4.0,4.016743,123,University of Maryland - College Park,123,University of Maryland - College Park
+16,17, Johns Hopkins University  ,27,277.0,295.9705,0.791892,18,14,9,3.5,3.9713190000000003,37,Johns Hopkins University,37,Johns Hopkins University
+17,18, University of Wisconsin - Madison  ,34,215.0,196.3172,0.728875,27,22,11,4.2,3.9030650000000002,161,University of Wisconsin - Madison,161,University of Wisconsin - Madison
+18,19, University of Southern California  ,39,233.5,194.307,0.7129989999999999,25,20,15,3.7,3.883378,149,University of Southern California,149,University of Southern California
+19,20, University of Pennsylvania  ,33,187.5,164.5952,0.680463,25,21,9,3.8,3.7394800000000004,144,University of Pennsylvania,144,University of Pennsylvania
+20,21, University of Texas - Austin  ,46,177.0,142.4359,0.6374770000000001,27,23,12,4.3,3.714748,153,University of Texas - Austin,153,University of Texas at Austin
+21,22, Harvard University  ,30,202.0,182.6699,0.7032510000000001,22,16,10,3.9,3.698918,32,Harvard University,32,Harvard University
+22,23, California Institute of Technology  ,16,287.0,238.2622,0.749024,12,8,7,4.2,3.6743330000000003,10,California Institute of Technology,10,California Institute of Technology
+23,24, University of Massachusetts - Amherst  ,44,177.0,169.7457,0.670309,25,16,11,3.6,3.654674,124,University of Massachusetts - Amherst,124,University of Massachusetts Amherst
+24,25, Duke University  ,39,163.0,154.7407,0.656946,24,17,11,3.6,3.5920690000000004,23,Duke University,23,Duke University
+25,26, University of California - Santa Barbara  ,30,166.0,158.3439,0.6680119999999999,23,16,10,3.3,3.5793019999999998,98,University of California - Santa Barbara,98,University of California - Santa Barbara
+26,27, Brown University  ,31,166.5,144.7924,0.6528729999999999,20,17,5,3.7,3.5244720000000003,8,Brown University,8,Brown University
+27,28, University of California - Santa Cruz  ,21,192.0,168.5923,0.6973060000000001,16,13,5,2.8,3.513417,99,University of California - Santa Cruz,99,University of California - Santa Cruz
+28,29, University of North Carolina - Chapel Hill  ,32,160.5,145.5892,0.645583,21,16,9,3.6,3.5104800000000003,138,University of North Carolina - Chapel Hill,138,University of North Carolina
+29,30, University of Chicago  ,36,144.0,165.1254,0.6542789999999999,21,15,8,3.3,3.501756,101,University of Chicago,101,University of Chicago
+30,31, University of California - Davis  ,33,149.0,128.9495,0.608214,23,17,3,3.3,3.48299,93,University of California - Davis,93,University of California - Davis
+31,32, University of Minnesota - Twin Cities  ,44,98.0,127.0364,0.575225,29,15,7,3.4,3.383169,129,University of Minnesota - Twin Cities,129,University of Minnesota
+32,33, Pennsylvania State University - University Park  ,35,136.0,113.7887,0.575209,21,15,5,3.4,3.353159,67,Pennsylvania State University - University Park,67,Pennsylvania State University
+33,34, University of California - Irvine  ,42,112.0,115.5083,0.5678810000000001,23,17,8,3.4,3.3526239999999996,94,University of California - Irvine,94,University of California - Irvine
+34,35, Purdue University - West Lafayette  ,54,112.0,111.3238,0.564316,27,14,3,3.7,3.340922,70,Purdue University - West Lafayette,70,Purdue University
+35,36, Rutgers - The State University of New Jersey - New Brunswick  ,41,124.0,112.4512,0.574104,20,16,8,3.3,3.321615,73,Rutgers - The State University of New Jersey - New Brunswick,73,Rutgers University
+36,37, Rice University  ,19,153.5,146.7319,0.632558,15,10,5,3.7,3.305042,72,Rice University,72,Rice University
+37,38, University of California - Riverside  ,31,133.5,127.7462,0.599406,18,12,3,2.8,3.291489,96,University of California - Riverside,96,University of California - Riverside
+38,39, Stony Brook University - SUNY  ,42,116.0,120.8264,0.595809,22,11,3,3.1,3.262881,77,Stony Brook University - SUNY,77,Stony Brook University
+39,40, Northeastern University  ,58,89.0,98.82412,0.517684,25,14,7,2.7,3.2143759999999997,58,Northeastern University,58,Northeastern University
+40,41, University of Arizona  ,19,140.0,130.4845,0.6097600000000001,15,9,3,3.1,3.211249,89,University of Arizona,89,University of Arizona
+41,42, Boston University  ,24,118.0,134.4413,0.606867,16,9,6,3.0,3.18034,5,Boston University,5,Boston University
+42,43, Northwestern University  ,33,98.5,103.9429,0.5466340000000001,21,9,2,3.3,3.113419,59,Northwestern University,59,Northwestern University
+43,44, University of Virginia  ,27,139.5,81.17459000000001,0.552628,15,10,3,3.4,3.088083,159,University of Virginia,159,University of Virginia
+44,45, Ohio State University  ,42,94.5,90.40181,0.5112399999999999,21,10,3,3.3,3.0815810000000003,62,Ohio State University,62,Ohio State University
+45,46, Indiana University - Bloomington  ,46,87.0,79.54263,0.488516,21,11,3,2.9,3.04346,35,Indiana University - Bloomington,35,Indiana University
+46,47, University of Utah  ,43,93.0,82.31175999999999,0.514901,20,10,2,3.1,3.038029,158,University of Utah,158,University of Utah
+47,48, Colorado State University  ,21,107.0,110.182,0.5615,15,7,1,2.4,3.025012,17,Colorado State University,17,Colorado State University
+48,49, University of Colorado - Boulder  ,34,108.0,99.76414,0.53835,15,8,3,3.1,3.020968,103,University of Colorado - Boulder,103,University of Colorado Boulder
+49,50, University of Rochester  ,19,117.0,124.3503,0.6030840000000001,11,6,3,2.9,2.9990959999999998,146,University of Rochester,146,University of Rochester
+50,51, University at Buffalo - SUNY  ,37,109.0,97.17089,0.522183,13,8,2,2.6,2.983763,85,University at Buffalo - SUNY,85,University at Buffalo
+51,52, University of Tennessee - Knoxville  ,24,113.0,113.8146,0.544886,12,6,2,2.4,2.977528,151,University of Tennessee - Knoxville,151,University of Tennessee
+52,53, Michigan State University  ,31,96.0,96.95373000000001,0.506828,16,7,2,2.8,2.970167,45,Michigan State University,45,Michigan State University
+53,54, Virginia Tech  ,43,78.5,79.23433,0.46538599999999997,19,10,1,3.1,2.968661,167,Virginia Tech,167,Virginia Tech
+54,55, Washington University in St. Louis  ,25,96.0,112.032,0.540983,13,6,5,3.1,2.941235,170,Washington University in St. Louis,170,Washington University in St. Louis
+55,56, Vanderbilt University  ,21,113.0,109.9858,0.55991,12,5,1,2.8,2.93975,165,Vanderbilt University,165,Vanderbilt University
+56,57, Arizona State University  ,59,69.5,73.5098,0.453467,19,11,2,3.0,2.9384580000000002,2,Arizona State University,2,Arizona State University
+57,58, Texas A&M University - College Station  ,42,76.0,73.50976,0.445985,21,8,1,3.1,2.925662,80,Texas A&M University - College Station,80,Texas A&M University
+58,59, University of Texas - Dallas  ,50,72.0,53.69656,0.406988,23,10,1,2.4,2.90666,154,University of Texas - Dallas,154,University of Texas at Dallas
+59,60, George Mason University  ,41,79.5,69.18587,0.455978,20,7,3,2.5,2.885573,28,George Mason University,28,George Mason University
+60,61, North Carolina State University  ,49,62.0,62.90459,0.415376,18,11,1,3.0,2.8595610000000002,56,North Carolina State University,56,North Carolina State University
+61,62, University of Pittsburgh  ,18,109.0,102.0603,0.537133,10,4,1,2.9,2.839578,145,University of Pittsburgh,145,University of Pittsburgh
+62,63, College of William and Mary  ,15,118.0,94.03938000000001,0.529088,8,4,2,2.4,2.799934,15,College of William and Mary,15,College of William and Mary
+63,64, Rensselaer Polytechnic Institute  ,24,79.5,90.84376,0.49094899999999997,11,6,3,2.9,2.792859,71,Rensselaer Polytechnic Institute,71,Rensselaer Polytechnic Institute
+64,65, University of Notre Dame  ,19,95.0,86.19121,0.48600600000000005,9,4,2,2.7,2.7313,141,University of Notre Dame,141,University of Notre Dame
+65,66, Dartmouth College  ,21,86.5,95.76475,0.513846,10,3,3,3.1,2.720566,20,Dartmouth College,20,Dartmouth College
+66,67, Portland State University  ,22,89.5,56.37836,0.444576,10,7,3,0.0,2.711335,68,Portland State University,68,Portland State University 
+67,68, University of Maryland - Baltimore County  ,25,71.0,88.11555,0.490947,10,5,4,2.4,2.710109,122,University of Maryland - Baltimore County,122,Univ. of Maryland - Baltimore County
+68,69, Lehigh University  ,16,73.0,93.51541,0.515984,9,4,1,2.1,2.68415,41,Lehigh University,41,Lehigh University
+69,70, University of Illinois - Chicago  ,31,66.0,74.04726,0.458296,10,6,3,2.7,2.6734419999999997,114,University of Illinois - Chicago,114,University of Illinois at Chicago
+70,71, University of Texas - Arlington  ,26,74.0,63.190369999999994,0.427756,12,5,1,2.2,2.671872,152,University of Texas - Arlington,152,University of Texas at Arlington
+71,72, University of Florida  ,41,50.5,61.48327,0.413872,12,8,2,3.0,2.653644,109,University of Florida,109,University of Florida
+72,73, University of Nebraska - Lincoln  ,28,71.0,65.37488,0.431039,10,5,1,2.4,2.633239,133,University of Nebraska - Lincoln,133,University of Nebraska
+73,74, University of Central Florida  ,36,53.0,58.02146,0.402739,11,8,1,2.2,2.632727,100,University of Central Florida,100,University of Central Florida
+74,75, Temple University  ,22,72.0,60.25476,0.432159,10,5,3,2.0,2.617597,79,Temple University,79,Temple University
+75,76, CUNY Graduate School and University Center  ,78,28.5,30.41333,0.277851,22,10,2,2.3,2.603797,9,CUNY Graduate School and University Center,9,CUNY
+76,77, University of South Florida  ,21,62.5,58.59588000000001,0.41639499999999996,8,5,1,2.1,2.537229,148,University of South Florida,148,University of South Florida
+77,78, University of Delaware  ,24,67.0,62.79993,0.438468,8,3,1,2.4,2.505462,107,University of Delaware,107,University of Delaware
+78,79, Illinois Institute of Technology  ,18,64.5,56.66457,0.383108,8,3,0,2.1,2.473043,33,Illinois Institute of Technology,33,Illinois Institute of Technology
+79,80, University of Missouri  ,15,66.0,55.866369999999996,0.417793,6,3,1,2.1,2.429565,131,University of Missouri,131,University of Missouri 
+80,81, Case Western Reserve University  ,18,71.0,61.725880000000004,0.442342,6,2,0,2.4,2.4293709999999997,12,Case Western Reserve University,12,Case Western Reserve University
+81,82, Worcester Polytechnic Institute  ,27,57.0,55.58999,0.371348,7,3,0,2.2,2.418756,174,Worcester Polytechnic Institute,174,Worcester Polytechnic Institute
+82,83, University of Houston  ,24,60.0,54.51311,0.359123,11,1,0,2.1,2.413936,112,University of Houston,112,University of Houston
+83,84, Wayne State University  ,20,65.0,68.57072,0.433033,7,1,1,2.0,2.4043669999999997,171,Wayne State University,171,Wayne State University
+84,85, New Jersey Institute of Technology  ,29,49.0,40.978629999999995,0.345835,9,4,0,2.2,2.401261,51,New Jersey Institute of Technology,51,New Jersey Institute of Technology 
+85,86, University of Memphis  ,11,72.0,63.64212,0.433741,4,2,1,0.0,2.3857060000000003,127,University of Memphis,127,University of Memphis 
+86,87, University of New Mexico  ,17,55.0,65.10027,0.41455299999999995,6,2,1,2.3,2.383132,136,University of New Mexico,136,University of New Mexico
+87,88, Drexel University  ,19,54.0,65.3267,0.417221,6,2,0,2.2,2.38002,22,Drexel University,22,Drexel University
+88,89, Tufts University  ,16,61.5,64.10936,0.39861599999999997,5,2,2,2.4,2.378514,83,Tufts University,83,Tufts University
+89,90, West Virginia University  ,21,60.5,38.916109999999996,0.338792,8,2,0,2.0,2.341832,172,West Virginia University,172,West Virginia University 
+90,91, Brandeis University  ,14,59.0,34.16264,0.38979,6,4,0,2.3,2.341568,6,Brandeis University,6,Brandeis University
+91,92, University of Iowa  ,20,55.5,59.21691,0.382947,5,2,0,2.6,2.337286,116,University of Iowa,116,University of Iowa
+92,93, Brigham Young University  ,31,49.5,39.35324,0.338165,7,3,1,2.2,2.318991,7,Brigham Young University,7,Brigham Young University
+93,94, Oregon State University  ,36,57.0,47.48598,0.325955,8,1,0,2.5,2.314525,66,Oregon State University,66,Oregon State University
+94,95, University of Kansas  ,23,46.0,47.16029,0.320345,5,3,0,2.3,2.289898,117,University of Kansas,117,University of Kansas
+95,96, Georgia State University  ,19,45.0,49.74545,0.36004,6,2,1,2.0,2.281971,31,Georgia State University,31,Georgia State University
+96,97, University of Connecticut  ,24,60.0,50.05151,0.345536,5,1,0,2.3,2.265287,106,University of Connecticut,106,University of Connecticut
+97,98, University of Texas - San Antonio  ,24,57.5,42.93936,0.346077,6,1,1,0.0,2.2507349999999997,156,University of Texas - San Antonio,156,University of Texas at San Antonio
+98,99, University of Georgia  ,21,51.0,47.81499,0.340175,4,2,0,2.2,2.244758,110,University of Georgia,110,University of Georgia
+99,100, University at Albany - SUNY  ,18,58.0,49.06335,0.33924899999999997,4,1,0,2.1,2.225075,84,University at Albany - SUNY,84,University at Albany - SUNY 
+100,101, Iowa State University  ,27,42.0,45.293890000000005,0.332598,5,2,1,2.6,2.223903,36,Iowa State University,36,Iowa State University
+101,102, Syracuse University  ,26,38.0,34.300670000000004,0.325683,6,3,2,2.5,2.2200189999999997,78,Syracuse University,78,Syracuse University 
+102,103, Clemson University  ,33,53.5,42.01726,0.302245,5,1,1,2.3,2.205177,14,Clemson University,14,Clemson University
+103,104, Florida International University  ,29,51.0,27.04428,0.323326,6,2,0,0.0,2.197753,26,Florida International University,26,Florida International University
+104,105, University of Kentucky  ,23,45.0,31.790540000000004,0.320701,4,3,1,2.2,2.184503,118,University of Kentucky,118,University of Kentucky
+105,106, Binghamton University - SUNY  ,27,51.0,43.694140000000004,0.347147,4,1,0,2.0,2.174188,4,Binghamton University - SUNY,4,Binghamton University
+106,107, Missouri University of Science & Technology  ,16,52.0,42.622370000000004,0.323709,4,1,1,2.0,2.173423,48,Missouri University of Science & Technology,48,Missouri University of Technology
+107,108, University of Hawaii - Manoa  ,24,36.0,26.882990000000003,0.273036,6,3,0,0.0,2.170776,111,University of Hawaii - Manoa,111,University of Hawaii at Manoa
+108,109, University of Oregon  ,15,43.0,58.12627,0.36945900000000004,3,1,0,2.6,2.1677560000000002,143,University of Oregon,143,University of Oregon
+109,110, University of South Carolina  ,25,33.0,42.17435,0.307444,7,1,1,2.1,2.164017,147,University of South Carolina,147,University of South Carolina
+110,111, Louisiana State University - Baton Rouge  ,19,47.0,38.33495,0.346652,3,2,1,2.1,2.1530709999999997,42,Louisiana State University - Baton Rouge,42,Louisiana State University - Baton Rouge 
+111,112, Florida State University  ,22,44.0,36.98997,0.302372,5,1,0,2.3,2.1419200000000003,27,Florida State University,27,Florida State University
+112,113, Stevens Institute of Technology  ,14,44.5,44.29612,0.31019800000000003,3,1,1,2.1,2.11715,76,Stevens Institute of Technology,76,Stevens Institute of Technology
+113,114, Florida Atlantic University  ,31,25.5,26.27238,0.267057,6,3,0,0.0,2.111998,24,Florida Atlantic University,24,Florida Atlantic University 
+114,115, University of Massachusetts - Lowell  ,15,42.0,22.52125,0.290199,4,2,0,0.0,2.078206,126,University of Massachusetts - Lowell,126,University of Massachusetts Lowell
+115,116, George Washington University  ,15,32.0,33.247659999999996,0.26552,3,2,0,2.3,2.058204,29,George Washington University,29,George Washington University
+116,117, DePaul University  ,50,19.0,21.83496,0.22402399999999997,6,3,1,0.0,2.04506,21,DePaul University,21,DePaul University 
+117,118, University of Massachusetts - Boston  ,15,41.0,43.08235,0.302081,5,0,0,0.0,2.030059,125,University of Massachusetts - Boston,125,University of Massachusetts Boston
+118,119, Colorado School of Mines  ,9,58.0,47.86959,0.34076599999999996,2,0,0,2.1,2.022379,16,Colorado School of Mines,16,Colorado School of Mines
+119,120, University of Tulsa  ,13,32.0,34.85327,0.254238,3,1,0,0.0,2.0137549999999997,157,University of Tulsa,157,University of Tulsa 
+120,121, University of Alabama  ,16,25.0,25.22813,0.310577,4,2,1,0.0,2.0084310000000003,86,University of Alabama,86,University of Alabama 
+121,122, Virginia Commonwealth University  ,17,36.0,37.39498,0.289511,2,1,0,0.0,2.007845,166,Virginia Commonwealth University,166,Virginia Commonwealth University
+122,123, University of Alabama - Birmingham  ,9,37.0,39.94106,0.283458,1,1,0,0.0,1.9747569999999999,87,University of Alabama - Birmingham,87,University of Alabama - Birmingham 
+123,124, Old Dominion University  ,15,38.5,28.13563,0.258919,2,1,0,0.0,1.971871,64,Old Dominion University,64,Old Dominion University
+124,125, Washington State University  ,17,34.0,19.686529999999998,0.301852,4,1,1,2.4,1.969597,169,Washington State University,169,Washington State University
+125,126, Naval Postgraduate School  ,18,33.0,31.746409999999997,0.268538,2,1,1,2.4,1.964591,50,Naval Postgraduate School,50,Naval Postgraduate School
+126,127, University of Maine  ,6,49.5,33.609590000000004,0.289815,3,0,0,0.0,1.960759,121,University of Maine,121,University of Maine 
+127,128, University of Arkansas - Fayetteville  ,16,32.0,22.31952,0.257232,2,2,0,0.0,1.9583150000000002,90,University of Arkansas - Fayetteville,90,University of Arkansas
+128,129, Kansas State University  ,15,43.0,32.41583,0.28917600000000004,3,0,0,2.2,1.9268049999999999,38,Kansas State University,38,Kansas State University
+129,130, University of Oklahoma  ,15,38.0,39.12792,0.264726,2,0,0,2.0,1.898756,142,University of Oklahoma,142,University of Oklahoma 
+130,131, University of North Carolina - Charlotte  ,20,38.5,29.026390000000003,0.272485,3,0,0,2.1,1.8882259999999997,139,University of North Carolina - Charlotte,139,University of North Carolina - Charlotte 
+131,132, University of Nevada - Reno  ,18,21.0,29.14125,0.239673,2,1,0,0.0,1.883046,135,University of Nevada - Reno,135,University of Nevada - Reno 
+132,133, Oakland University  ,14,30.0,28.454929999999997,0.250175,1,1,0,0.0,1.88132,61,Oakland University,61,Oakland University 
+133,134, New Mexico State University  ,13,55.5,30.65738,0.276502,1,0,0,0.0,1.881113,53,New Mexico State University,53,New Mexico State University
+134,135, University of Texas - El Paso  ,15,25.0,24.529239999999998,0.234767,2,1,0,0.0,1.881014,155,University of Texas - El Paso,155,University of Texas - El Paso 
+135,136, Claremont Graduate University  ,6,38.0,44.7642,0.307958,1,0,0,0.0,1.8744740000000002,13,Claremont Graduate University,13,Claremont Graduate University 
+136,137, University of Colorado - Colorado Springs  ,12,21.0,27.135270000000002,0.235961,2,1,0,0.0,1.871877,104,University of Colorado - Colorado Springs,104,Univ. of Colorado Colorado Springs
+137,138, University of Louisiana - Lafayette  ,22,15.0,22.71069,0.24869899999999998,3,1,1,0.0,1.84276,119,University of Louisiana - Lafayette,119,University of Louisiana - Lafayette 
+138,139, University of Cincinnati  ,20,28.0,23.55325,0.22916399999999998,1,1,1,2.0,1.842098,102,University of Cincinnati,102,University of Cincinnati 
+139,140, University of Denver,8,47.0,28.592229999999997,0.28125300000000003,1,0,0,0.0,1.835341,108,University of Denver,108,University of Denver
+140,141, University of North Texas  ,27,37.0,26.10311,0.242856,2,0,0,0.0,1.826314,140,University of North Texas,140,University of North Texas
+141,142, Oregon Health and Science University  ,8,34.5,37.30786,0.256231,1,0,0,2.2,1.8231509999999997,65,Oregon Health and Science University,65,Oregon Health and Science University 
+142,143, University of Louisville  ,15,21.0,13.744860000000001,0.210524,3,1,0,0.0,1.8215430000000001,120,University of Louisville,120,University of Louisville 
+143,144, Utah State University  ,14,30.0,24.09981,0.24450100000000002,3,0,0,0.0,1.817639,164,Utah State University,164,Utah State University 
+144,145, University of Wisconsin - Milwaukee  ,12,36.0,32.25397,0.23595300000000002,1,0,0,0.0,1.805177,162,University of Wisconsin - Milwaukee,162,University of Wisconsin - Milwaukee 
+145,146, Texas Tech University  ,17,13.5,19.657429999999998,0.198198,1,1,0,0.0,1.723237,81,Texas Tech University,81,Texas Tech University 
+146,147, Florida Institute of Technology  ,20,17.0,12.78533,0.173932,1,1,1,0.0,1.6986740000000002,25,Florida Institute of Technology,25,Florida Institute of Technology 
+147,148, University of Arkansas - Little Rock  ,8,13.5,15.83005,0.15296500000000002,1,1,0,0.0,1.696366,91,University of Arkansas - Little Rock,91,University of Arkansas - Little Rock 
+148,149, University of Alabama - Huntsville  ,16,23.5,23.78426,0.20018,1,0,0,0.0,1.690753,88,University of Alabama - Huntsville,88,University of Alabama - Huntsville 
+149,150, Kent State University  ,19,11.0,11.43368,0.190104,2,1,0,0.0,1.690278,39,Kent State University,39,Kent State University 
+150,151, University of New Orleans  ,11,25.5,19.64694,0.20956,1,0,0,0.0,1.6762599999999999,137,University of New Orleans,137,University of New Orleans 
+151,152, Auburn University  ,17,22.0,21.28528,0.195149,1,0,0,2.2,1.666052,3,Auburn University,3,Auburn University
+152,153, University of Wyoming  ,6,20.0,18.8511,0.125225,1,0,0,0.0,1.6373,163,University of Wyoming,163,University of Wyoming 
+153,154, University of Missouri - Kansas City  ,19,21.5,17.01931,0.170646,1,0,0,0.0,1.634102,132,University of Missouri - Kansas City,132,University of Missouri - Kansas City 
+154,155, Montana State University  ,9,30.0,27.93223,0.182332,0,0,0,0.0,1.630785,49,Montana State University,49,Montana State University 
+155,156, Mississippi State University  ,17,18.0,18.71574,0.184184,1,0,0,0.0,1.623027,47,Mississippi State University,47,Mississippi State University 
+156,157, Southern Methodist University  ,12,15.5,11.51435,0.184535,2,0,0,2.0,1.600143,74,Southern Methodist University,74,Southern Methodist University 
+157,158, University of Mississippi  ,8,18.0,11.20285,0.18773800000000002,1,0,0,0.0,1.565199,130,University of Mississippi,130,University of Mississippi 
+158,159, Western Michigan University  ,13,18.5,10.59581,0.14512,1,0,0,0.0,1.563173,173,Western Michigan University,173,Western Michigan University 
+159,160, University of Southern Mississippi  ,13,7.0,10.167119999999999,0.15045,2,0,0,0.0,1.512936,150,University of Southern Mississippi,150,University of Southern Mississippi 
+160,161, Air Force Institute of Technology  ,12,18.5,19.33908,0.11929400000000001,0,0,0,0.0,1.509952,1,Air Force Institute of Technology,1,Air Force Institute of Technology 
+161,162, Towson University  ,28,9.5,11.89982,0.128111,1,0,0,0.0,1.5037479999999999,82,Towson University,82,Towson University 
+162,163, Michigan Technological University  ,16,17.5,17.72898,0.12220999999999999,0,0,0,0.0,1.492048,46,Michigan Technological University,46,Michigan Technological University 
+163,164, North Dakota State University  ,7,18.0,14.84027,0.129219,0,0,0,0.0,1.47434,57,North Dakota State University,57,North Dakota State University 
+164,165, University of Idaho  ,13,19.0,11.3848,0.139902,0,0,0,0.0,1.452862,113,University of Idaho,113,University of Idaho
+165,166, Oklahoma State University  ,12,16.5,11.5839,0.11661700000000001,0,0,0,0.0,1.437326,63,Oklahoma State University,63,Oklahoma State University 
+166,167, Nova Southeastern University  ,26,1.0,4.72985,0.09812699999999999,1,1,0,0.0,1.434252,60,Nova Southeastern University,60,Nova Southeastern University 
+167,168, New Mexico Institute of Mining and Technology  ,7,11.0,10.98965,0.070758,0,0,0,0.0,1.388739,52,New Mexico Institute of Mining and Technology,52,New Mexico Institute of Mining and Technology 
+168,169, University of Nebraska - Omaha  ,17,12.5,8.727463,0.104479,0,0,0,0.0,1.380162,134,University of Nebraska - Omaha,134,University of Nebraska - Omaha 
+169,170, University of Colorado - Denver  ,10,8.0,12.24885,0.092535,0,0,0,0.0,1.371251,105,University of Colorado - Denver,105,University of Colorado - Denver 
+170,171, Louisiana Tech University  ,6,6.5,4.527019,0.075,0,0,0,0.0,1.273982,43,Louisiana Tech University,43,Louisiana Tech University 
+171,172, Indiana State University  ,7,0.0,2.359611,0.058709000000000004,0,0,0,0.0,1.090726,34,Indiana State University,34,Indiana State University 
+172,173, LIU Post  ,4,0.0,1.0,0.013363,0,0,0,0.0,1.0590620000000002,40,LIU Post,40,LIU Post 
