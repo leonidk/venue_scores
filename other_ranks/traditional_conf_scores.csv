@@ -1174,7 +1174,7 @@ H,abbrv,category,citations,name,dblp_name
 69,ICPR,Machine Learning & Pattern Recognition,9593,International Conference on Pattern Recognition,ICPR
 60,ISNN,Machine Learning & Pattern Recognition,16649,International Symposium on Neural Networks,ISNN
 58,COLT,Machine Learning & Pattern Recognition,939,Computational Learning Theory,COLT
-46,ECML,Machine Learning & Pattern Recognition,826,The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases,ECML
+46,ECML,Machine Learning & Pattern Recognition,826,The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases,ECML/PKDD
 40,ICDAR,Machine Learning & Pattern Recognition,2516,International Conference on Document Analysis and Recognition,ICDAR
 37,ICANN,Machine Learning & Pattern Recognition,2344,Int. Conference on Artificial Neural Networks,ICANN
 31,ICA,Machine Learning & Pattern Recognition,670,Independent Component Analysis,ICA
@@ -1666,7 +1666,7 @@ H,abbrv,category,citations,name,dblp_name
 48,PACT,Distributed & Parallel Computing,804,International Conference on Parallel Architectures and Compilation Techniques,PACT
 47,IPTPS,Distributed & Parallel Computing,144,Peer-to-Peer Systems,IPTPS
 46,SRDS,Distributed & Parallel Computing,844,Symposium on Reliable Distributed Systems,SRDS
-44,CCGRID,Distributed & Parallel Computing,1455,Cluster Computing and the Grid,CCGRID
+44,CCGRID,Distributed & Parallel Computing,1455,Cluster Computing and the Grid,CCGrid
 43,DISC(WDAG),Distributed & Parallel Computing,705,Workshop on Distributed Algorithms/International Symposium on Distributed Computing,DISC
 43,LCPC,Distributed & Parallel Computing,689,Languages and Compilers for Parallel Computing,LCPC
 42,JSSPP,Distributed & Parallel Computing,213,Job Scheduling Strategies for Parallel Processing,JSSPP
@@ -2124,7 +2124,7 @@ H,abbrv,category,citations,name,dblp_name
 67,CIKM,Data Mining,2638,International Conference on Information and Knowledge Management,CIKM
 56,ICDM,Data Mining,2510,IEEE International Conference on Data Mining,ICDM
 45,SDM,Data Mining,709,SIAM International Conference on Data Mining,SDM
-40,PKDD,Data Mining,998,Principles of Data Mining and Knowledge Discovery,PKDD
+40,PKDD,Data Mining,998,Principles of Data Mining and Knowledge Discovery,ECML/PKDD
 33,PAKDD,Data Mining,1256,Pacific-Asia Conference on Knowledge Discovery and Data Mining,PAKDD
 28,RIAO,Data Mining,574,Recherche dInformation Assistee par Ordinateur,RIAO
 27,DMKD,Data Mining,103,Research Issues on Data Mining and Knowledge Discovery,DMKD
@@ -2171,7 +2171,7 @@ H,abbrv,category,citations,name,dblp_name
 24,Scale-Space,Computer Vision,386,Scale-Space Theories in Computer Vision,Scale-Space
 24,ICVS,Computer Vision,294,International Conference on Computer Vision Systems,ICVS
 24,CVRMed,Computer Vision,164,"Computer Vision, Virtual Reality and Robotics in Medicine",CVRMed
-23,3DPVT,Computer Vision,423,3D Data Processing Visualization and Transmission,3DPVT
+23,3DPVT,Computer Vision,423,3D Data Processing Visualization and Transmission,3DV
 19,DGCI,Computer Vision,462,Discrete Geometry for Computer Imagery,DGCI
 19,ICWSM,Computer Vision,236,International Conference on Weblogs and Social Media,ICWSM
 18,EMMCVPR,Computer Vision,255,Energy Minimization Methods in Computer Vision and Pattern Recognition,EMMCVPR
@@ -2852,4 +2852,3 @@ H,abbrv,category,citations,name,dblp_name
 2,,Algorithms & Theory,28,Algorithmen und Werkzeuge fr Petrinetze,NotAConf
 2,,Algorithms & Theory,15,Easter Conference on Model Theory,Easter Conference on Model Theory
 2,EGCDMAS,Algorithms & Theory,12,"Electronic Government and Commerce: Design, Modeling, Analysis and Security",EGCDMAS
-2,,Algorithms & Theory,8,A Half-Century of Automata Theory,A Half-Century of Automata Theory

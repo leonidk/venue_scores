@@ -29,6 +29,8 @@ download/dblp.dtd: |download
 	#cd download && wget -nc https://dblp.org/xml/release/dblp-2017-08-29.dtd
 	cd download && wget -nc https://dblp.org/xml/dblp.dtd
 
+new_pagerank_people.pkl: useful_papers.pkl.gz
+	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute pagerank.ipynb
 
 faculty-affiliations.csv: csrankings.csv
 	python3 gen_fac_affil.py 
