@@ -1,12 +1,12 @@
 
 
-all: useful_papers.pkl.gz download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/dblp-2019-01-01.xml.gz download/dblp-2017-08-29.dtd dblp-aliases.csv csrankings.csv download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
+all: useful_papers.pkl.gz download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
 .PHONY: all
 
 dblp-aliases.csv: 
 	wget -N https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/dblp-aliases.csv 
 
-faculty-affiliations.csv:
+csrankings.csv:
 	wget -N https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/csrankings.csv
 
 download/university-of-california-2017.csv: |download
@@ -18,21 +18,25 @@ download/university-of-california-2016.csv: |download
 download/university-of-california-2015.csv: |download
 	cd download && wget -nc https://transcal.s3.amazonaws.com/public/export/university-of-california-2015.csv
 
- # DBLP XML dataset
-download/dblp-2019-01-01.xml.gz: |download
-	cd download && wget -nc https://dblp.org/xml/release/dblp-2019-01-01.xml.gz 
+# DBLP XML dataset
+# lets just make this as new as possible
+download/dblp.xml.gz: |download
+	#cd download && wget -nc https://dblp.org/xml/release/dblp-2019-01-01.xml.gz 
+	cd download && wget -nc https://dblp.org/xml/dblp.xml.gz
 
 # DBLP's corresponding DTD file
-download/dblp-2017-08-29.dtd: |download
-	cd download && wget -nc https://dblp.org/xml/release/dblp-2017-08-29.dtd
+download/dblp.dtd: |download
+	#cd download && wget -nc https://dblp.org/xml/release/dblp-2017-08-29.dtd
+	cd download && wget -nc https://dblp.org/xml/dblp.dtd
+
 
 faculty-affiliations.csv: csrankings.csv
 	python3 gen_fac_affil.py 
 
-parsed_files.pkl.gz: faculty-affiliations.csv download/dblp-2019-01-01.xml.gz download/dblp-2017-08-29.dtd
+parsed_files.pkl.gz: faculty-affiliations.csv download/dblp.xml.gz download/dblp.dtd
 	python3 my_dblp_parser.py
 
-useful_papers.pkl.gz: parsed_files.pkl.gz
+useful_papers.pkl.gz: parsed_files.pkl.gz dblp-aliases.csv
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleanup_venues.ipynb
 	rm cleanup_venues.nbconvert.ipynb
 # folder for downloading
@@ -42,7 +46,7 @@ download/nsf: | download
 download:
 	mkdir -p $@
 
-nsf2.pkl: download/nsffile
+nsf2.pkl: download/nsffile 
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute parse_nsf.ipynb
 	rm parse_nsf.nbconvert.ipynb
 

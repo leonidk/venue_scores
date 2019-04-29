@@ -21,19 +21,27 @@ areadict = {
     #
     # SIGPLAN
 #    'plan' : ['POPL', 'PLDI', 'PACMPL'],  # PACMPL, issue POPL
-    '3dv': ['3DV','3DIMPVT'],
+    '3dv': ['3DV','3DIMPVT','3DPVT'],
     'i3d': ['I3D','SI3D'],
     'popl' : ['POPL'],
     'pldi' : ['PLDI'],
+    'HPCC' : ['HPCC','HPCC/CSS/ICESS','HPCC/SmartCity/DSS'],
+    'pkdd' : ['ECML/PKDD','ECML','PKDD'],
+    'allerton': ['Allerton','Allerton Conference'],
+    'ccgrid': ['CCGrid','CCGRID'],
+    'cdc': ['CDC','CDC-ECE'],
+    'ieede': ['IEEE Design & Test','IEEE Design & Test of Computers'],
+    'ieeemce' : ['IEEE Trans. Systems, Man, and Cybernetics','IEEE Trans. Systems, Man, and Cybernetics, Part A','IEEE Trans. Systems, Man, and Cybernetics, Part B','IEEE Trans. Systems, Man, and Cybernetics, Part C'],
     # "Next tier" - see csrankings.ts
     'oopsla' : ['OOPSLA'], # Next tier
     'icfp'   : ['ICFP'],   # Next tier
     'pacmpl' : ['PACMPL'], # Special PACMPL handling below
+    'sbp': ['SBP','SBP-BRiMS'],
     # SIGSOFT
     #    'soft': ['ICSE', 'ICSE (1)', 'ICSE (2)', 'SIGSOFT FSE', 'ESEC/SIGSOFT FSE'],
     'icse' : ['ICSE', 'ICSE (1)'],
-    'fse'  : ['SIGSOFT FSE', 'ESEC/SIGSOFT FSE'],
-    'ase'  : ['ASE'], # Next tier
+    'fse'  : ['SIGSOFT FSE', 'ESEC/SIGSOFT FSE','ESEC / SIGSOFT FSE'],
+    'ase'  : ['ASE','Automated Software Engineering'], # Next tier
     'issta'  : ['ISSTA'], # Next tier
     # SIGOPS
     # - OSDI/SOSP alternate years, so are treated as one venue; USENIX ATC has two variants in DBLP
@@ -53,9 +61,10 @@ areadict = {
     'mobisys' : ['MobiSys'],
     'mobicom' : ['MobiCom', 'MOBICOM'],
     'sensys'  : ['SenSys'],
+    'social': ['SocialCom','SocialCom/PASSAT'],
     # SIGHPC
     # 'hpc': ['SC', 'HPDC', 'ICS'],
-    'sc': ['SC'],
+    'sc': ['SC','SC Companion'],
     'hpdc': ['HPDC'],
     'ics': ['ICS'],
     # SIGBED
@@ -130,7 +139,7 @@ areadict = {
 #            ],
     'emnlp': ['EMNLP', 'EMNLP-CoNLL', 'HLT/EMNLP'],
     'acl' : ['ACL', 'ACL (1)', 'ACL (2)', 'ACL/IJCNLP', 'COLING-ACL'],
-    'naacl' : ['NAACL', 'HLT-NAACL', 'NAACL-HLT'],
+    'naacl' : ['NAACL', 'HLT-NAACL', 'NAACL-HLT', 'NAACL-HLT (1)','NAACL-HLT (2)'],
 #    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)'],
     'cvpr': ['CVPR', 'CVPR (1)', 'CVPR (2)'],
     'iccv': ['ICCV'],
@@ -366,7 +375,7 @@ def pagecount(pageStr):
             count = end - start + 1
     return count
 
-parser = etree.iterparse(source=gzip.GzipFile('download/dblp-2019-01-01.xml.gz','rb'), dtd_validation=False, load_dtd=True)
+parser = etree.iterparse(source=gzip.GzipFile('download/dblp.xml.gz','rb'), dtd_validation=False, load_dtd=True)
 counter = 0
 main_log = []
 for event, elem in parser:
@@ -490,7 +499,7 @@ for event, elem in parser:
                     eb_skip = True
         if pages == -1 and venue == 'ACM Conference on Computer and Communications Security':
             eb_toofew = True
-    
+
         if ((pages != -1) and (pages < 6)):
             eb_toofew = True
             exceptionConference = venue == 'SC'
