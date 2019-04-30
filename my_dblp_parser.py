@@ -21,7 +21,7 @@ areadict = {
     #
     # SIGPLAN
 #    'plan' : ['POPL', 'PLDI', 'PACMPL'],  # PACMPL, issue POPL
-    '3dv': ['3DV','3DIMPVT','3DPVT'],
+    '3dv': ['3DV','3DIMPVT','3DPVT','3DIM'],
     'i3d': ['I3D','SI3D'],
     'popl' : ['POPL'],
     'pldi' : ['PLDI'],
