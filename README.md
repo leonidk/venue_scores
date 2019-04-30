@@ -1,7 +1,7 @@
 # venue_scores
 This is the source code and project history for the following publication
 
-**Venue Analytics: A Simple Alternative to Citation-Based Metrics** by Leonid Keselman [arXiv](https://arxiv.org/abs/1904.12573)
+**Venue Analytics: A Simple Alternative to Citation-Based Metrics** by Leonid Keselman ([arXiv version here])(https://arxiv.org/abs/1904.12573)
 
 This paper proposes an automatic pipeline for ranking and organizing academic conferences in Computer Science. It uses all the data from [DBLP](https://dblp.org/), featuring millions of authors, millions of papers and thousands of publication venues. 
 * For ranking, the basic contribution is to formulate conference ranking as a linear regression task, from publication history to targets like NSF Grant Amount, Faculty Status, or Salary. These conference rankings can vary over time, and be used to evaluate individual academics, universities as well. This also includes a PageRank baseline for author and conference ranking.
