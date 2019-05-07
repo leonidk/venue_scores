@@ -1,0 +1,180 @@
+﻿PLDI,PLDI
+OOPSLA,OOPSLA
+POPL,POPL
+ACM Trans. Program. Lang. Syst.,TPLS
+ECOOP,ECOOP
+CC,CC
+NSDI,NSDI
+SIGCOMM,SIGCOMM
+HotNets,HotNets
+ACM Crossroads,ACM Crossroads
+IMC,IMC
+ICCPS,ICCPS
+Robotics: Science and Systems,RSS
+I. J. Robotics Res.,IJRR
+WAFR,WAFR
+Auton. Robots,Auton. Robots
+IEEE Robot. Automat. Mag.,IEEE-RAM
+IEEE Trans. Robotics,IEEE-TR
+EMNLP,EMNLP
+ACL,ACL
+Computational Linguistics,Computational Linguistics
+TACL,TACL
+CoNLL,CoNLL
+NAACL,NAACL
+ITA,ITA
+CISS,CISS
+IEEE Trans. Information Theory,IEEE TIT
+Allerton,Allerton
+IEEE Visualization,IEEE Visu
+IEEE Trans. Signal Processing,IEEE-TSP
+IEEE Trans. Pattern Anal. Mach. Intell.,PAMI
+CVPR,CVPR
+International Journal of Computer Vision,IJCV
+WACV,WACV
+IEEE Trans. Image Processing,IEEE-TIP
+CVPR Workshops,CVPRW
+CODES+ISSS,CODES+ISSS
+ISLPED,ISLPED
+JETC,JETC
+DAC,DAC
+ICCAD,ICCAD
+ISPD,ISPD
+RECOMB,RECOMB
+ISMB,ISMB
+WABI,WABI
+ISBRA,ISBRA
+Journal of Computational Biology,JCB
+Pacific Symposium on Biocomputing,PSB
+EDM,EDM
+HRI,HRI
+IVA,IVA
+Cognitive Science,CogSci
+AIIDE,AIIDE
+IEEE Intelligent Systems,IEEE-IS
+HPDC,HPDC
+PPOPP,PPOPP
+ICS,ICS
+LCPC,LCPC
+IPDPS,IPDPS
+ICPP,ICPP
+SIGMOD Conference,SIGMOD
+IEEE Data Eng. Bull.,IEEE-DEB
+PODS,PODS
+ACM Trans. Database Syst.,TDS
+VLDB,VLDB
+ICDE,ICDE
+ICDCS,ICDCS
+IEEE Trans. Parallel Distrib. Syst.,IEEE-TPDS
+J. Comput. Sci. Technol.,JCST
+DSN,DSN
+ICAC,ICAC
+MASCOTS,MASCOTS
+TKDD,TKDD
+KDD,KDD
+SDM,SDM
+WWW,WWW
+SIGKDD Explorations,SIGKDD
+IEEE Trans. Knowl. Data Eng.,IEEE-TKDE
+DNA,DNA
+WAW,WAW
+Algorithmica,Algorithmica
+Internet Mathematics,Internet Mathematics
+SIAM J. Discrete Math.,SIAM J. Discrete Math.
+J. Comb. Optim.,J. Comb. Optim.
+Graphical Models,Graphical Models
+Computer-Aided Design,Computer-Aided Design
+ICIC,ICIC
+Computer Aided Geometric Design,CAGD
+J. Symb. Comput.,J. Symb. Comput.
+Eng. Comput. (Lond.),Eng. Comput.
+Symposium on Computational Geometry,SCG
+CCCG,CCCG
+Discrete & Computational Geometry,DCG
+J. Graph Algorithms Appl.,JGAA
+Comput. Geom.,Comput. Geom.
+Int. J. Comput. Geometry Appl.,IJCCA
+MobiCom,MobiCom
+MobiSys,MobiSys
+SenSys,SenSys
+IPSN,IPSN
+SECON,SECON
+TOSN,TOSN
+SPAA,SPAA
+SIGACT News,SIGACT News
+PODC,PODC
+DISC,DISC
+Distributed Computing,Distributed Computing
+TOPC,TOPC
+SIGMETRICS,SIGMETRICS
+ICNP,ICNP
+MobiHoc,MobiHoc
+IWQoS,IWQoS
+SIGMETRICS Performance Evaluation Review,SIGMETRICS PER
+IEEE/ACM Trans. Netw.,IEEE/ACM Trans. Netw.
+UIST,UIST
+ASSETS,ASSETS
+UbiComp,UbiComp
+CSCW,CSCW
+CHI,CHI
+ACM Trans. Comput.-Hum. Interact.,TOCHI
+ACM Trans. Graph.,TOG
+SIGGRAPH,SIGGRAPH
+Symposium on Computer Animation,SCA
+SIGGRAPH Asia,SIGGRAPH Asia
+I3D,I3D
+Comput. Graph. Forum,Comput. Graph. Forum
+SIGIR,SIGIR
+SIAM Review,SIAM Review
+JCDL,JCDL
+SIAM J. Matrix Analysis Applications,SIAM JMAA
+J. Sci. Comput.,J. Sci. Comput.
+SIAM J. Scientific Computing,SIAM JSC
+EMSOFT,EMSOFT
+CAV,CAV
+VMCAI,VMCAI
+FMCAD,FMCAD
+RV,RV
+MEMOCODE,MEMOCODE
+NDSS,NDSS
+IEEE Symposium on Security and Privacy,S&P
+USENIX Security Symposium,USENIX Security
+CCS,CCS
+PoPETs,PoPETs
+RAID,RAID
+SIGecom Exchanges,SIGecom Exchanges
+UAI,UAI
+AAAI,AAAI
+AI Magazine,AI Magazine
+GameSec,GameSec
+J. Artif. Intell. Res.,J. Artif. Intell. Res.
+COLT,COLT
+NIPS,NIPS
+ICML,ICML
+AISTATS,AISTATS
+Journal of Machine Learning Research,JMLR
+ACM Multimedia,ACM Multimedia
+HSCC,HSCC
+IEEE Trans. Automat. Contr.,IEEE-TAC
+IEEE Trans. Control of Network Systems,IEEE-CNS
+IEEE Trans. Contr. Sys. Techn.,IEEE-CST
+Automatica,Automatica
+CDC,CDC
+EUROCRYPT,EUROCRYPT
+TCC,TCC
+CRYPTO,CRYPTO
+J. Cryptology,J. Cryptology
+ASIACRYPT,ASIACRYPT
+Public Key Cryptography,PKC
+ASPLOS,ASPLOS
+ACM Trans. Comput. Syst.,ACM Trans. Comput. Syst.
+ISCA,ISCA
+MICRO,MICRO
+HPCA,HPCA
+IISWC,IISWC
+STOC,STOC
+Theory of Computing,TOC
+FOCS,FOCS
+J. ACM,J. ACM
+SIAM J. Comput.,SIAM JC
+Computational Complexity,Computational Complexity
