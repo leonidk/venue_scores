@@ -5,6 +5,7 @@ download/
 *.pkl
 *.nbconvert.ipynb
 *.gz
+*.png
 acm2017/*.xlsx
 # Byte-compiled / optimized / DLL files
 __pycache__/
