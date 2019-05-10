@@ -39,16 +39,16 @@ parsed_files.pkl.gz: faculty-affiliations.csv download/dblp.xml.gz download/dblp
 	python3 my_dblp_parser.py
 
 weights_faculty_above6_linear_2_40_25_0.pkl: useful_papers.pkl.gz
-	REGRESSION_TASK_IDX=0 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	rm cleaned_venues_to_weights.nbconvert.ipynb
+	-REGRESSION_TASK_IDX=0 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
+	-rm cleaned_venues_to_weights.nbconvert.ipynb
 
 weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz
-	REGRESSION_TASK_IDX=1 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	rm cleaned_venues_to_weights.nbconvert.ipynb
+	-REGRESSION_TASK_IDX=1 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
+	-rm cleaned_venues_to_weights.nbconvert.ipynb
 
 weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz
-	REGRESSION_TASK_IDX=3 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	rm cleaned_venues_to_weights.nbconvert.ipynb
+	-REGRESSION_TASK_IDX=3 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
+	-rm cleaned_venues_to_weights.nbconvert.ipynb
 
 clf_gold.pkl.npy: weights_faculty_above6_linear_2_40_25_0.pkl weights_nsfmarginal_above6_log_2_0_25_0.pkl weights_salary_above6_linear_2_0_25_0.pkl 
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute combine_weights.ipynb
