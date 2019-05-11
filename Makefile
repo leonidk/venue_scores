@@ -43,7 +43,7 @@ weights_faculty_above6_linear_2_40_25_0.pkl: useful_papers.pkl.gz
 	-REGRESSION_TASK_IDX=0 REGRESSION_SIZE_NORM=$(REGRESSION_SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
 	-rm cleaned_venues_to_weights.nbconvert.ipynb
 
-weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz
+weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz nsf2.pkl
 	-REGRESSION_TASK_IDX=1 REGRESSION_SIZE_NORM=$(REGRESSION_SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
 	-rm cleaned_venues_to_weights.nbconvert.ipynb
 
