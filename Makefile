@@ -1,6 +1,6 @@
 # Normalize by conf size
 # 0 is off. 1 is on (1/(# of papers)). 2 is on (1/(sqrt(# of papers)))
-SIZE_NORM = 2
+SIZE_NORM = 1
 
 # normalize by number of conferences in a given year
 CONF_NUM_NORM = 1
@@ -9,7 +9,10 @@ CONF_NUM_NORM = 1
 COMBINE_CLIP = 20
 
 all:   clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
-.PHONY: all
+.PHONY: all cleanup
+
+cleanup:
+	 jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace *.ipynb
 
 dblp-aliases.csv: 
 	wget -N https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/dblp-aliases.csv 
