@@ -5,6 +5,9 @@ SIZE_NORM = 2
 # normalize by number of conferences in a given year
 CONF_NUM_NORM = 1
 
+# clipping coeff for combining weights
+COMBINE_CLIP = 20
+
 all:   clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
 .PHONY: all
 
@@ -36,6 +39,7 @@ download/dblp.dtd: |download
 
 new_pagerank_people.pkl: useful_papers.pkl.gz
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute pagerank.ipynb
+	rm pagerank.nbconvert.ipynb
 
 faculty-affiliations.csv: csrankings.csv
 	python3 gen_fac_affil.py 
@@ -45,23 +49,23 @@ parsed_files.pkl.gz: faculty-affiliations.csv download/dblp.xml.gz download/dblp
 
 weights_faculty_above6_linear_2_40_25_0.pkl: useful_papers.pkl.gz
 	-REGRESSION_TASK_IDX=0 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	rm *.nbconvert.ipynb
+	-rm *.nbconvert.ipynb
 
 weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz nsf2.pkl
 	-REGRESSION_TASK_IDX=1 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	rm *.nbconvert.ipynb
+	-rm *.nbconvert.ipynb
 
 weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz
 	-REGRESSION_TASK_IDX=3 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	rm *.nbconvert.ipynb
+	-rm *.nbconvert.ipynb
 
 clf_gold.pkl.npy: weights_faculty_above6_linear_2_40_25_0.pkl weights_nsfmarginal_above6_log_2_0_25_0.pkl weights_salary_above6_linear_2_0_25_0.pkl new_pagerank_people.pkl mask.npy
-	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute combine_weights.ipynb
-	rm *.nbconvert.ipynb
+	COMBINE_CLIP=$(COMBINE_CLIP) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute combine_weights.ipynb
+	rm combine_weights.nbconvert.ipynb
 
 mask.npy: useful_papers.pkl.gz
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cluster_new.ipynb
-	rm *.nbconvert.ipynb
+	rm cluster_new.nbconvert.ipynb
 
 useful_papers.pkl.gz: parsed_files.pkl.gz dblp-aliases.csv
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleanup_venues.ipynb
