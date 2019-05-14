@@ -7,7 +7,7 @@ SIZE_NORM = 1.26186
 CONF_NUM_NORM = 1
 
 # clipping coeff for combining weights
-COMBINE_CLIP = 20
+COMBINE_CLIP = 14
 
 all:   clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
 .PHONY: all cleanup
