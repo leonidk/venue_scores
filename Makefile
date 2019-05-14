@@ -1,6 +1,6 @@
 # Normalize by conf size
 # 0 is off. 1 is on (1/(# of papers)). 2 is on (1/(sqrt(# of papers)))
-SIZE_NORM = 1
+SIZE_NORM = 1.5
 
 # normalize by number of conferences in a given year
 CONF_NUM_NORM = 1
