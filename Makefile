@@ -1,6 +1,7 @@
 # Normalize by conf size
 # 0 is off. 1 is on (1/(# of papers)). 2 is on (1/(sqrt(# of papers)))
-SIZE_NORM = 1.5
+# this is the fractal dimension of a Koch snowflake
+SIZE_NORM = 1.26186
 
 # normalize by number of conferences in a given year
 CONF_NUM_NORM = 1
@@ -19,6 +20,9 @@ dblp-aliases.csv:
 
 csrankings.csv:
 	wget -N https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/csrankings.csv
+
+industry.csv:
+	wget -N https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/old/industry.csv
 
 download/university-of-california-2017.csv: |download
 	cd download && wget -nc https://transcal.s3.amazonaws.com/public/export/university-of-california-2017.csv
@@ -44,7 +48,7 @@ new_pagerank_people.pkl: useful_papers.pkl.gz
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute pagerank.ipynb
 	rm pagerank.nbconvert.ipynb
 
-faculty-affiliations.csv: csrankings.csv
+faculty-affiliations.csv: csrankings.csv industry.csv
 	python3 gen_fac_affil.py 
 
 parsed_files.pkl.gz: faculty-affiliations.csv download/dblp.xml.gz download/dblp.dtd
