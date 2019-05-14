@@ -1,7 +1,17 @@
 # Normalize by conf size
 # 0 is off. 1 is on (1/(# of papers)). 2 is on (1/(sqrt(# of papers)))
 # this is the fractal dimension of a Koch snowflake
-SIZE_NORM = 1.26186
+#SIZE_NORM = 1.26186
+# this is sqrt of 2
+#SIZE_NORM = 1.4142
+# this is 2
+#SIZE_NORM = 2
+# this is the golden ratio
+#SIZE_NORM = 1.618
+# Hausdorff dimension of Spierpinsky Triangle
+#SIZE_NORM = 1.5849625
+# Area of Mandelbrot Fractal
+SIZE_NORM = 1.50659
 
 # normalize by number of conferences in a given year
 CONF_NUM_NORM = 1
