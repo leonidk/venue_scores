@@ -510,11 +510,15 @@ for event, elem in parser:
 
         if ((pages != -1) and (pages < 6)):
             eb_toofew = True
-            exceptionConference = venue == 'SC'
+            exceptionConference = False
+            exceptionConference |= venue == 'SC' and year <= 2012
             exceptionConference |= venue == 'SIGSOFT FSE' and year == 2012
             exceptionConference |= venue == 'ACM Trans. Graph.' and int(volume) >= 26 and int(volume) <= 36
             exceptionConference |= venue == 'SIGGRAPH' and int(volume) >= 26 and int(volume) <= 36
             exceptionConference |= venue == 'CHI' and year == 2018 # FIXME - hopefully DBLP will fix
+            exceptionConference |= venue == 'ICCAD' and year == 2018
+            exceptionConference |= venue == 'CHI' and year == 2019
+            exceptionConference |= venue == 'FAST' and year == 2012
             if exceptionConference:
                 eb_toofew = False
 
@@ -530,12 +534,6 @@ for event, elem in parser:
             if 'Angela Dai' in authors:
                 print(data)
             if 'Leonid Keselman' in authors:
-                print(data)
-            if 'Stan Melax' in authors:
-                print(data)
-            if 'Keenan Crane' in authors:
-                print(data)
-            if 'Siddharth Ancha' in authors:
                 print(data)
         #print(elem.tag,title, authors, venue, pages, startPage,year)
         #print(elem.text)
