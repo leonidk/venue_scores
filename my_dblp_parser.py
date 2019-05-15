@@ -23,6 +23,9 @@ areadict = {
 #    'plan' : ['POPL', 'PLDI', 'PACMPL'],  # PACMPL, issue POPL
     '3dv': ['3DV','3DIMPVT','3DPVT','3DIM'],
     'i3d': ['I3D','SI3D'],
+    'wacv': ['WACV','WACV/MOTION'],
+    'isccaaa': ['ICCASA/ICTCC','ICCASA','ICTCC'],
+    'tcc': ['TCC','TCC (A1)','TCC (A2)','TCC (B1)','TCC (B2)'],
     'popl' : ['POPL'],
     'pldi' : ['PLDI'],
     'HPCC' : ['HPCC','HPCC/CSS/ICESS','HPCC/SmartCity/DSS'],
@@ -90,9 +93,11 @@ areadict = {
     'usenixsec' : ['USENIX Security Symposium', 'USENIX Security'],
     'ndss' : ['NDSS'],
     'pets' : ['PoPETs', 'Privacy Enhancing Technologies'],
+    'xp':  ['XP', 'XP Workshops','XP1 Workshop on Database Theory','XP2 Workshop on Relational Database Theory','XP4.5 Workshop on Database Theory', 'XP7.52 Workshop on Database Theory'],
     # SIGCOMM
     # 'comm': ['SIGCOMM', 'NSDI'], # INFOCOM
     'sigcomm': ['SIGCOMM'],
+    'dmkd': ['DMKD','1999 ACM SIGMOD Workshop on Research Issues in Data Mining and Knowledge Discovery', 'ACM SIGMOD Workshop on Research Issues in Data Mining and Knowledge Discovery'],
     'nsdi': ['NSDI'], # INFOCOM
     # SIGARCH
     # 'arch': ['ISCA', 'MICRO', 'ASPLOS'],
@@ -106,9 +111,10 @@ areadict = {
     'lics' : ['LICS', 'CSL-LICS'],
     # SIGACT
     # 'act': ['STOC', 'FOCS', 'SODA'],
-    'focs': ['FOCS'],
+    'focs': ['FOCS','SWAT (FOCS)','SWAT'],
     'stoc': ['STOC'],
     'soda': ['SODA'],
+    'IS':['IS','IEEE Conf. of Intelligent Systems','IEEE Conf. on Intelligent Systems'],
     # 'mlmining': ['NIPS', 'ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)', 'KDD'],
     'nips': ['NIPS', 'NeurIPS'],
     'icml': ['ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)'],
@@ -130,7 +136,7 @@ areadict = {
     # 'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST', 'IMWUT', 'Pervasive'],
     'chiconf' : ['CHI'],
     'ubicomp' : ['UbiComp', 'Ubicomp', 'IMWUT', 'Pervasive'],
-    'uist' : ['UIST'],
+    'uist' : ['UIST','ACM Symposium on User Interface Software and Technology'],
 #    'nlp': ['EMNLP', 'ACL', 'ACL (1)', 'ACL (2)', 'NAACL', 'HLT-NAACL', 'NAACL-HLT',
 #            'ACL/IJCNLP',  # -- in 2009 was joint
 #            'COLING-ACL',  # -- in 1998 was joint
@@ -381,6 +387,7 @@ main_log = []
 for event, elem in parser:
     title, authors, venue, pages, startPage,year, volume,number,url,publtype,eb_toofew,eb_skip= None, [], None, -1, -1, 0, '0', '0','',None,False,False
     insert_data = True
+
     if elem.tag in {"article", "inproceedings", "proceedings", "book", "incollection"}:
         for sub in elem:
             if sub.tag == 'title':
