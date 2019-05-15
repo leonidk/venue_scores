@@ -153,6 +153,7 @@ areadict = {
     # 'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems'],
     'icra': ['ICRA', 'ICRA (1)', 'ICRA (2)'],
     'iros': ['IROS'],
+    'icme': ['ICME','ICMCS'],
     'rss': ['Robotics: Science and Systems'],
     # 'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)'],
     'crypto': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)'],
@@ -175,7 +176,7 @@ for k,v in areadict.items():
     n = len(v)
     for i in range(1,n):
         inverse_area_dict[v[i]] = v[0]
-
+# ISSTA/ECOOP Workshop  SpringSim (MSCIAAS) ICoMS CCKS
 # EMSOFT is now published as a special issue of TECS, in a particular page range.
 EMSOFT_TECS = { 2017: (16, 5) }
 EMSOFT_TECS_PaperNumbers = { 2017: (163, 190) } # "pages" 163--190
