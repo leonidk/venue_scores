@@ -8,10 +8,10 @@ with open('csrankings.csv', mode='r') as infile:
             facWriter = csv.DictWriter(facultyaffs, fieldnames=facfieldnames)
             facWriter.writeheader()
             for row in reader:
-                f = { 'name' : row['name'],
-                        'affiliation' : row['affiliation'] }
+                f = { 'name' : row['name'].strip().rstrip(),
+                        'affiliation' : row['affiliation'].strip().rstrip() }
                 facWriter.writerow(f)
             for row in reader2:
-                f = { 'name' : row['name'],
-                        'affiliation' : row['affiliation'] }
+                f = { 'name' : row['name'].strip().rstrip(),
+                        'affiliation' : row['affiliation'].strip().rstrip() }
                 facWriter.writerow(f)
