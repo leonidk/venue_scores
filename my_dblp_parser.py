@@ -442,6 +442,7 @@ for event, elem in parser:
                 (vol, num) = TVCG_VR_Volume[year]
                 if (volume == str(vol)) and (number == str(num)):
                     venue = 'VR'
+        
         # Special handling for ISMB.
         if venue == 'Bioinformatics':
             if year in ISMB_Bioinformatics:
@@ -470,14 +471,12 @@ for event, elem in parser:
                 for p in pageRange:
                     if startPage >= p[0] and startPage + pages - 1 <= p[1]:
                        eb_skip = True
-
         # Special handling for SIGGRAPH and SIGGRAPH Asia.
         elif venue in areadict['siggraph']: # == 'ACM Trans. Graph.':
             if year in TOG_SIGGRAPH_Volume:
                 (vol, num) = TOG_SIGGRAPH_Volume[year]
                 if not ((volume == str(vol)) and (number == str(num))):
                     eb_skip = True
-
         elif venue in areadict['siggraph-asia']: # == 'ACM Trans. Graph.':
             if year in TOG_SIGGRAPH_Asia_Volume:
                 (vol, num) = TOG_SIGGRAPH_Asia_Volume[year]
@@ -497,7 +496,6 @@ for event, elem in parser:
                     Vis_Conf = True
             if not Vis_Conf:
                 eb_skip = True
-
 
         # Disambiguate Innovations in (Theoretical) Computer Science from
         # International Conference on Supercomputing
@@ -521,14 +519,24 @@ for event, elem in parser:
             exceptionConference |= venue == 'FAST' and year == 2012
             if exceptionConference:
                 eb_toofew = False
+        
+
+
 
         insert_data = False if (venue is None or year < 1970 or len(authors) == 0) else insert_data
+        #if 'Jonathan T. Moon' in authors:
+        #    print(title,authors,venue,pages,insert_data)
         if insert_data:
             venue = inverse_area_dict.get(venue,venue)
             split_venue = venue.split(' ')
             # turn CVPR (1) to CVPR
             if len(split_venue) > 0 and len(split_venue[-1]) > 2 and split_venue[-1][-1] == ')' and split_venue[-1][1:-1].isnumeric():
                 venue = ' '.join(split_venue[:-1])
+
+            if venue != None:
+                venue = venue.replace('SIGGRAPH ASIA','SIGGRAPH Asia')
+                venue = venue.replace('(','').replace(')','')
+
             data = (elem.tag,title, authors, venue, pages, startPage,year,volume,number,url,publtype,eb_toofew,eb_skip)
             main_log.append(data)
             if 'Angela Dai' in authors:
