@@ -111,7 +111,7 @@ areadict = {
     'lics' : ['LICS', 'CSL-LICS'],
     # SIGACT
     # 'act': ['STOC', 'FOCS', 'SODA'],
-    'focs': ['FOCS','SWAT (FOCS)','SWAT'],
+    'focs': ['FOCS','SWAT (FOCS)','SWAT','SWCT'],
     'stoc': ['STOC'],
     'soda': ['SODA'],
     'IS':['IS','IEEE Conf. of Intelligent Systems','IEEE Conf. on Intelligent Systems'],
