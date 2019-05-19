@@ -444,10 +444,12 @@ for event, elem in parser:
                     venue = 'VR'
         elif venue == 'Int. J. Computer Assisted Radiology and Surgery':
             ipcai_lookup = {2015: [6], 2016: [6], 2017: [6,7], 2018:[5,6], 2019:[6,7]}
-            number = int(number)
-            print(volume,number,year,title,authors)
-            if (year in ipcai_lookup) and (number in ipcai_lookup[year]):
-                venue = 'IPCAI'
+            if number.isdigit():
+                number = int(number)
+                if (year in ipcai_lookup) and (number in ipcai_lookup[year]):
+                    #print(volume,number,year,title,authors)
+                    venue = 'IPCAI'
+
 
         # Special handling for ISMB.
         if venue == 'Bioinformatics':
