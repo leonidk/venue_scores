@@ -79,10 +79,10 @@
 77,59,OOPSLA,Software Engineering,1822,"Conference on Object-Oriented Programming Systems, Languages, and Applications",OOPSLA
 78,59,SPIN,Software Engineering,644,International Workshop on Model Checking of Software,SPIN
 79,57,TACAS,Software Engineering,670,Tools and Algorithms for Construction and Analysis of Systems,TACAS
-80,56,ICSM,Software Engineering,1486,International Conference on Software Maintenance,NotAConf
+80,56,ICSM,Software Engineering,1486,International Conference on Software Maintenance,ICSM
 81,54,CP,Software Engineering,1245,Principles and Practice of Constraint Programming,CP
-82,49,IFIP,Software Engineering,2830,IFIP Congress,NotAConf
-83,47,,Software Engineering,406,Requirements Engineering,NotAConf
+82,49,IFIP,Software Engineering,2830,IFIP Congress,IFIP Congress
+83,47,,Software Engineering,406,Requirements Engineering,Requirements Engineering
 84,46,,Software Engineering,3061,Dagstuhl Seminars,NotAConf
 85,46,AOSD,Software Engineering,346,Aspect-Oriented Software Development,AOSD
 86,45,SAS(WSA),Software Engineering,555,Static Analysis Symposium/Workshop on Static Analysis,SAS
@@ -107,7 +107,7 @@
 105,30,FoSSaCS,Software Engineering,399,Foundations of Software Science and Computation Structure,FoSSaCS
 106,30,FMCAD,Software Engineering,348,Formal Methods in Computer-Aided Design,FMCAD
 107,30,VMCAI,Software Engineering,278,"Verification, Model Checking and Abstract Interpretation",VMCAI
-108,30,ISMM,Software Engineering,231,International Symposium on Memory Management,NotAConf
+108,30,ISMM,Software Engineering,231,International Symposium on Memory Management,ISMM
 109,29,ICSR,Software Engineering,335,International Conference on Software Reuse,ICSR
 110,28,CSMR,Software Engineering,723,Conference on Software Maintenance and Reengineering,CSMR
 111,28,SPLC,Software Engineering,394,Software Product Lines,SPLC
@@ -138,7 +138,7 @@
 136,20,CSC,Software Engineering,1756,ACM Annual Computer Science Conference,CSC
 137,20,ICECCS,Software Engineering,706,International Conference on Engineering of Complex Computer Systems,ICECCS
 138,20,QEST,Software Engineering,386,Quantitative Evaluation of Systems,QEST
-139,20,RE,Software Engineering,104,IEEE Int. Conf. on Requirements Engineering,RE
+139,20,RE,Software Engineering,104,IEEE Int. Conf. on Requirements Engineering,NotAConf
 140,19,,Software Engineering,540,Australian Software Engineering Conference,Australian Software Engineering Conference
 141,19,HASE,Software Engineering,414,High-Assurance Systems,HASE
 142,19,IFM,Software Engineering,207,Integrated Formal Methods,IFM
@@ -335,7 +335,7 @@
 333,2,,Software Engineering,54,International Working Conference on Model Realism,International Working Conference on Model Realism
 334,2,CAL,Software Engineering,44,Confrence francophone sur les Architectures Logicielles,CAL
 335,2,HINC,Software Engineering,41,History of Nordic Computing,History of Nordic Computing
-336,2,,Software Engineering,21,Managing Information Technologys Organisational Impact,NotAConf
+336,2,,Software Engineering,21,Managing Information Technologys Organisational Impact,Managing Information Technology's Organisational Impact
 337,2,,Software Engineering,21,Software-Entwicklung,Software-Entwicklung
 338,2,,Software Engineering,20,Software Management,Software Management
 339,2,,Software Engineering,18,The IOTA Programming System,The IOTA Programming System
@@ -527,7 +527,7 @@
 525,8,APSCC,Scientific Computing,709,Asia-Pacific Services Computing Conference,APSCC
 526,8,CISIS,Scientific Computing,681,"International Conference on Complex, Intelligent and Software Intensive Systems",CISIS
 527,8,LSSC,Scientific Computing,458,Large-Scale Scientific Computing,LSSC
-528,8,,Scientific Computing,215,Numerical Methods and Applications,NotAConf
+528,8,,Scientific Computing,215,Numerical Methods and Applications,Numerical Methods and Applications
 529,7,ICETET,Scientific Computing,712,International Conference on Emerging Trends in Engineering & Technology,ICETET
 530,7,,Scientific Computing,317,Numerical Analysis and Its Applications,NotAConf
 531,7,WAIFI,Scientific Computing,63,Arithmetic of Finite Fields,WAIFI
@@ -739,7 +739,7 @@
 737,1,DSML,Programming Languages,6,Domain-Specific Modeling Languages,DSML
 738,1,SETA,Programming Languages,1,Symposium on Environments and Tools for Ada,SETA
 739,0,,Programming Languages,10,Eiffel,Eiffel
-740,93,USENIX,Operating Systems,1470,USENIX Technical Conference,NotAConf
+740,93,USENIX,Operating Systems,1470,USENIX Technical Conference,USENIX
 741,73,SOSP,Operating Systems,413,ACM Symposium on Operating Systems Principles,SOSP
 742,70,OSDI,Operating Systems,237,Operating Systems Design and Implementation,OSDI
 743,59,NOSSDAV,Operating Systems,529,Network and Operating System Support for Digital Audio and Video,NOSSDAV
@@ -815,7 +815,7 @@
 813,22,CoNEXT,Network & Communications,332,Conference on Emerging Network Experiment and Technology,CoNEXT
 814,22,SCN,Network & Communications,176,Security and Cryptography for Networks,SCN
 815,21,WIOPT,Network & Communications,561,"Modeling and Optimization in Mobile, Ad-Hoc and Wireless Networks",WiOpt
-816,21,WMTE,Network & Communications,181,Wireless and Mobile Technologies in Education,NotAConf
+816,21,WMTE,Network & Communications,181,Wireless and Mobile Technologies in Education,WMTE
 817,21,ISCN,Network & Communications,141,International Symposium on Computer Networks,ISCN
 818,21,NGC,Network & Communications,118,Networked Group Communication,Networked Group Communication
 819,21,WSNA,Network & Communications,30,international workshop on wireless sensor networks and applications,WSNA
@@ -1328,7 +1328,7 @@
 1326,21,NIME,Human-Computer Interaction,377,New Interfaces for Musical Expression,NIME
 1327,21,DSV-IS,Human-Computer Interaction,301,"Design, Specification, and Verification of Interactive Systems",DSV-IS
 1328,21,GW,Human-Computer Interaction,277,Gesture Workshop,Gesture Workshop
-1329,21,EHCI,Human-Computer Interaction,101,Engineering for Human-Computer Interaction,EHCI
+1329,21,EHCI,Human-Computer Interaction,101,Engineering for Human-Computer Interaction,Engineering for Human-Computer Interaction
 1330,21,WSNA,Human-Computer Interaction,30,international workshop on wireless sensor networks and applications,WSNA
 1331,20,PDC,Human-Computer Interaction,234,Participatory Design,PDC
 1332,20,MLMI,Human-Computer Interaction,181,Machine Learning for Multimodal Interaction,MLMI
@@ -1339,7 +1339,7 @@
 1337,18,ACCG,Human-Computer Interaction,201,spring conference on computer graphics,NotAConf
 1338,18,CUU,Human-Computer Interaction,59,ACM Conference on Universal Usability,NotAConf
 1339,17,MVA,Human-Computer Interaction,1255,Machine Vision Applications,MVA
-1340,17,ACMACE,Human-Computer Interaction,515,Advances in Computer Entertainment Technology,NotAConf
+1340,17,ACMACE,Human-Computer Interaction,515,Advances in Computer Entertainment Technology,Advances in Computer Entertainment Technology
 1341,17,OZCHI,Human-Computer Interaction,488,Australasian Computer-Human Interaction Conference,OZCHI
 1342,17,DIGRA,Human-Computer Interaction,364,Conference of the Digital Games Research Association,DiGRA
 1343,16,ICNSC,Human-Computer Interaction,1768,"International Conference on Networking, Sensing and Control",ICNSC
@@ -1394,7 +1394,7 @@
 1392,8,ACHI,Human-Computer Interaction,153,International Conference on Advances in Computer-Human Interaction,ACHI
 1393,8,INTETAIN,Human-Computer Interaction,86,Intelligent Technologies for Interactive Entertainment,INTETAIN
 1394,8,CSREAHCI,Human-Computer Interaction,31,CSREA HCI,CSREA HCI
-1395,8,,Human-Computer Interaction,28,Engineering for Human-Computer Interaction,NotAConf
+1395,8,,Human-Computer Interaction,28,Engineering for Human-Computer Interaction,Engineering for Human-Computer Interaction
 1396,8,GFPW,Human-Computer Interaction,27,Glasgow Functional Programming Workshop,NotAConf
 1397,8,,Human-Computer Interaction,18,Artifical Intelligence for Human Computing,Artifical Intelligence for Human Computing
 1398,8,IVME,Human-Computer Interaction,17,"interpreters, virtual machines and emulators",NotAConf
@@ -1547,7 +1547,7 @@
 1545,8,SIPEW,Hardware & Architecture,44,SPEC International Performance Evaluation Workshop,SIPEW
 1546,8,E-smart,Hardware & Architecture,22,Research in Smart Cards,E-smart
 1547,7,SoCC,Hardware & Architecture,289,IEEE International System-on-Chip (SoC) Conference,SoCC
-1548,7,,Hardware & Architecture,69,Synthesis for Control Dominated Circuits,NotAConf
+1548,7,,Hardware & Architecture,69,Synthesis for Control Dominated Circuits,Synthesis for Control Dominated Circuits
 1549,6,CIT,Hardware & Architecture,195,Conference on Information Technology,CIT
 1550,6,RECOSOC,Hardware & Architecture,95,Reconfigurable Communication-centric Systems-on-Chip,ReCoSoC
 1551,6,,Hardware & Architecture,28,New Zealand Computer Science Research Students Conference,New Zealand Computer Science Research Students' Conference
@@ -1645,7 +1645,7 @@
 1643,5,EGITALY,Graphics,115,Eurographics Italian Chapter Conference,Eurographics Italian Chapter Conference
 1644,5,GMAI,Graphics,90,Geometric Modeling and Imaging,GMAI
 1645,5,ACST,Graphics,65,Advances in Computer Science and Technology,ACST
-1646,4,,Graphics,18,Geometric Modeling,Geometric Modelling
+1646,4,,Graphics,18,Geometric Modeling,Geometric Modeling
 1647,3,CGVR,Graphics,137,International Conference on Computer Graphics and Virtual Reality,CGVR
 1648,3,,Graphics,24,Visualisierungstechniken und Algorithmen,Visualisierungstechniken und Algorithmen
 1649,2,,Graphics,33,Formal Aspects of Cognitive Processes,Formal Aspects of Cognitive Processes
@@ -1766,7 +1766,7 @@
 1764,10,WDAS,Distributed & Parallel Computing,74,Workshop on Distributed Data and Structures,WDAS
 1765,10,PASCO,Distributed & Parallel Computing,36,International Symposium on Parallel Symbolic Computation,PASCO
 1766,10,WELCOM,Distributed & Parallel Computing,23,Workshop on Electronic Commerce,WELCOM
-1767,10,ACMMSP,Distributed & Parallel Computing,20,Memory System Performance,NotAConf
+1767,10,ACMMSP,Distributed & Parallel Computing,20,Memory System Performance,Memory System Performance
 1768,9,SASO,Distributed & Parallel Computing,367,Self-Adaptive and Self-Organizing Systems,SASO
 1769,9,PDCN,Distributed & Parallel Computing,356,Parallel and Distributed Computing and Networks,Parallel and Distributed Computing and Networks
 1770,9,ACPC,Distributed & Parallel Computing,150,International Austrian Center for Parallel Computation Conference,ACPC
@@ -1788,7 +1788,7 @@
 1786,8,SOCA,Distributed & Parallel Computing,218,Service-Oriented Computing and Applications,SOCA
 1787,8,WISES,Distributed & Parallel Computing,139,Workshop on Intelligent Solutions in Embedded Systems,WISES
 1788,8,,Distributed & Parallel Computing,108,Supercomputer,Supercomputer
-1789,8,IFIP PACT,Distributed & Parallel Computing,48,Parallel Architectures and Compilation Techniques,NotAConf
+1789,8,IFIP PACT,Distributed & Parallel Computing,48,Parallel Architectures and Compilation Techniques,IFIP PACT
 1790,8,SELFMAN,Distributed & Parallel Computing,17,"Self-Managed Networks, Systems, and Services",SelfMan
 1791,8,MOVEP,Distributed & Parallel Computing,13,Modeling and Verification of Parallel Processes,MOVEP
 1792,8,PPEALS,Distributed & Parallel Computing,13,Symposium on Principles and Practice of Parallel Programming,NotAConf
@@ -1911,7 +1911,7 @@
 1909,18,,Databases,148,Geographic Information Science,NotAConf
 1910,18,XP,Databases,93,Workshops on Database Theory,XP
 1911,18,ADBT,Databases,45,Advances in Database Theory,NotAConf
-1912,17,CPR,Databases,770,Special Interest Group on Computer Personnel Research Annual Conference,NotAConf
+1912,17,CPR,Databases,770,Special Interest Group on Computer Personnel Research Annual Conference,CPR
 1913,17,BTW,Databases,685,"Datenbanksysteme in Bro, Technik und Wissenschaft(German Database Conference)",BTW
 1914,17,FODO,Databases,173,Conference on Foundations of Data Organization and Algorithms,FODO
 1915,17,VDB,Databases,168,Visual Database Systems,VDB
@@ -1926,7 +1926,7 @@
 1924,16,JCDKB,Databases,71,International Conference on Data and Knowledge Bases,JCDKB
 1925,16,PJW,Databases,41,Workshop on Persistence and Java,NotAConf
 1926,15,,Databases,603,Electronic Government,NotAConf
-1927,15,IQ,Databases,464,MIT Conference on Information Quality,NotAConf
+1927,15,IQ,Databases,464,MIT Conference on Information Quality,IQ
 1928,15,DILS,Databases,158,Data Integration in the Life Sciences,DILS
 1929,15,XSym,Databases,103,International XML Database Symposium,XSym
 1930,14,WAIM,Databases,799,Web-Age Information Management,Web-Age Information Management
@@ -1986,7 +1986,7 @@
 1984,10,,Databases,20,Inference Control in Statistical Databases,Inference Control in Statistical Databases
 1985,10,OODS,Databases,19,International Workshop on Object-Oriented Database Systems,NotAConf
 1986,9,,Databases,707,IFIP TC5/WG5.5 Publications,NotAConf
-1987,9,APMS,Databases,673,Advances in Production Management Systems,NotAConf
+1987,9,APMS,Databases,673,Advances in Production Management Systems,APMS
 1988,9,,Databases,237,Information Systems Technology and its Applications,NotAConf
 1989,9,,Databases,148,Baltic Computer Science,NotAConf
 1990,9,APCCM,Databases,81,Asia-Pacific Conference on Conceptual Modelling,APCCM
@@ -1999,7 +1999,7 @@
 1997,9,,Databases,23,Workflow Management,NotAConf
 1998,8,IKE,Databases,673,Information and Knowledge Engineering,IKE
 1999,8,IRMA,Databases,430,IRMA Conference,IRMA Conference
-2000,8,SIGCPR,Databases,178,Special Interest Group on Computer Personnel Research Annual Conference,SIGCPR
+2000,8,SIGCPR,Databases,178,Special Interest Group on Computer Personnel Research Annual Conference,NotAConf
 2001,8,W2GIS,Databases,137,Web and Wireless Geographical Information Systems,W2GIS
 2002,8,DNIS,Databases,136,Databases in Networked Information Systems,DNIS
 2003,8,AUSDM,Databases,118,Australasian Conference on Knowledge Discovery and Data Mining,AusDM
@@ -2214,14 +2214,14 @@
 2212,26,ICCE,Computer Education,1211,International Conference on Computers in Education,ICCE
 2213,24,FECS,Computer Education,7769,Conference on Frontiers in Education,FECS
 2214,21,ICALT,Computer Education,2930,International Conference on Advanced Learning Technologies,ICALT
-2215,21,WMTE,Computer Education,181,Wireless and Mobile Technologies in Education,NotAConf
+2215,21,WMTE,Computer Education,181,Wireless and Mobile Technologies in Education,WMTE
 2216,20,ITiCSE,Computer Education,1090,Annual Joint Conference Integrating Technology into Computer Science Education,ITiCSE
 2217,18,CSEE&T,Computer Education,841,Conference on Software Engineering Education and Training,CSEE&T
 2218,16,ICLS,Computer Education,77,International Conference on Learning Sciences,ICLS
 2219,14,ASCILITE,Computer Education,208,Australian Society for Computers in Tertiary Education,ASCILITE
-2220,14,ACE,Computer Education,114,Australasian Computing Education Conference,ACE
+2220,14,ACE,Computer Education,114,Australasian Computing Education Conference,NotAConf
 2221,14,ICER,Computer Education,35,International Computing Education Research Workshop,ICER
-2222,13,SIGITE,Computer Education,322,Information Technology Education,NotAConf
+2222,13,SIGITE,Computer Education,322,Information Technology Education,SIGITE
 2223,12,ECTEL,Computer Education,459,European Conference on Technology Enhanced Learning,NotAConf
 2224,11,CITC,Computer Education,189,Conference On Information Technology Education,CITC
 2225,11,EEF,Computer Education,28,European Educational Forum,NotAConf
@@ -2710,7 +2710,7 @@
 2708,28,TLCA,Algorithms & Theory,262,Typed Lambda Calculus and Applications,TLCA
 2709,27,ICCS,Algorithms & Theory,3882,International Conference on Computational Science,International Conference on Computational Science
 2710,27,FCT,Algorithms & Theory,847,Fundamentals of Computation Theory,FCT
-2711,27,SWAT,Algorithms & Theory,442,Scandinavian Workshop on Algorithm Theory,NotAConf
+2711,27,SWAT,Algorithms & Theory,442,Scandinavian Workshop on Algorithm Theory,SWAT
 2712,27,CHARME,Algorithms & Theory,220,Conference on Correct Hardware Design and Verification Methods,CHARME
 2713,27,ISTCS,Algorithms & Theory,151,Israel Symposium on Theory of Computing Systems,ISTCS
 2714,26,COCOON,Algorithms & Theory,905,Computing and Combinatorics,COCOON
@@ -2728,7 +2728,7 @@
 2726,21,,Algorithms & Theory,130,Logic of Programs,Logic of Programs
 2727,20,SOFSEM,Algorithms & Theory,780,Conference on Current Trends in Theory and Practice of Informatics,SOFSEM
 2728,20,ASIAN,Algorithms & Theory,414,Asian Computing Science Conference,ASIAN
-2729,20,IFIP TCS,Algorithms & Theory,226,IFIP International Conference on Theoretical Computer Science,NotAConf
+2729,20,IFIP TCS,Algorithms & Theory,226,IFIP International Conference on Theoretical Computer Science,IFIP TCS
 2730,20,,Algorithms & Theory,152,Mathematical Foundations of Programming Semantics,Mathematical Foundations of Programming Semantics
 2731,20,,Algorithms & Theory,127,Category Theory and Computer Science,Category Theory and Computer Science
 2732,19,SIROCCO,Algorithms & Theory,383,Colloquium on Structural Information & Communication Complexity,SIROCCO
