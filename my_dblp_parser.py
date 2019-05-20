@@ -85,6 +85,7 @@ areadict = {
     'sigmod' : ['SIGMOD Conference'],
     'icde' : ['ICDE'], # next tier
     'pods' : ['PODS'], # next tier
+    'assets': ['ASSETS','International ACM Conference on Assistive Technologies'],
     # SIGSAC
     # - USENIX Security listed twice to reflect variants in DBLP
     # 'sec': ['IEEE Symposium on Security and Privacy', 'ACM Conference on Computer and Communications Security', 'USENIX Security Symposium', 'USENIX Security', 'CCS'], # , 'NDSS'],
