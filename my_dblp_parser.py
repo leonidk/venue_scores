@@ -34,15 +34,15 @@ areadict = {
     'ccgrid': ['CCGrid','CCGRID'],
     'cdc': ['CDC','CDC-ECE'],
     'dissys': ['Conference on Designing Interactive Systems','Symposium on Designing Interactive Systems'],
-    're': ['RE','Requirements Engineering'],
+    'reqengi': ['Requirements Engineering','RE'],
     'iwost': ['IWOST','IWOST-1', 'IWOST-2'],
     'db/conf/IEEEwisa': ['WISA','IEEE WISA'] ,
     'db/conf/IEEEants': ['ANTS', 'IEEE ANTS'] ,
     'db/conf/IEEEcloud': ['CLOUD', 'IEEE CLOUD'] ,
     'db/conf/IEEEscc': ['SCC', 'IEEE SCC'] ,
     'db/conf/IEEEpact': ['PACT', 'IEEE PACT'] ,
-    'db/conf/ACMmsp': ['Memory System Performance and Correctness', 'Memory System Performance'] ,
-    'db/conf/ACMace': [ 'ACE', 'Advances in Computer Entertainment Technology', 'Advances in Computer Entertainment'] ,
+    'db/conf/ACMmsp': [ 'Memory System Performance','Memory System Performance and Correctness'] ,
+    'db/conf/ACMace': ['Advances in Computer Entertainment Technology', 'Advances in Computer Entertainment', 'ACE'] ,
     'ieede': ['IEEE Design & Test','IEEE Design & Test of Computers'],
     'ieeemce' : ['IEEE Trans. Systems, Man, and Cybernetics','IEEE Trans. Systems, Man, and Cybernetics, Part A','IEEE Trans. Systems, Man, and Cybernetics, Part B','IEEE Trans. Systems, Man, and Cybernetics, Part C'],
     # "Next tier" - see csrankings.ts
@@ -53,7 +53,7 @@ areadict = {
     'db/conf/dna': ['DNA', 'DNA Computing'] ,
     'db/conf/dcc': ['DCC', 'Data Compression Conference'] ,
     'db/conf/dft': ['DFT', 'DFTS'] ,
-    'db/conf/nma': ['NMA','Numerical Methods and Application', 'Numerical Methods and Applications'] ,
+    'db/conf/nma': ['Numerical Methods and Applications','NMA','Numerical Methods and Application'] ,
     'db/conf/ppopp': ['PPOPP', 'PPoPP'] ,
     'db/conf/approx': ['APPROX-RANDOM', 'APPROX','RANDOM'] ,
     # SIGSOFT
@@ -73,17 +73,17 @@ areadict = {
     'db/conf/pgm': ['Probabilistic Graphical Models', 'PGM'] ,
     'db/conf/isbms': ['ISBMS', 'ISMBS'],
     'db/conf/wsom': ['WSOM+', 'WSOM'] ,
-    'db/conf/wmte': ['WMUTE', 'WMTE'] ,
+    'db/conf/wmte': ['WMTE','WMUTE'] ,
     'db/conf/fgct': ['FGST', 'FGCT'] ,
     'db/conf/aips': ['ICAPS', 'AIPS', 'Expert Planning Systems'] ,
     'db/conf/vr': ['VR', 'VRAIS'] ,
     'db/conf/wowmom': ['WOWMOM', 'WoWMoM'] ,
     'db/conf/naa': ['NAA', 'WNAA'] ,
     'db/conf/bmvc': ['BMVC', 'Alvey Vision Conference'] ,
-    'db/conf/iwmm': ['IWMM', 'ISMM'] ,
+    'db/conf/iwmm': ['ISMM','IWMM'] ,
     'db/conf/ubimob': ['UbiMob', 'Ubimob'] ,
     'db/conf/iwcf': ['IWCF', 'ICWF'] ,
-    'db/conf/sigcpr': ['SIGCPR', 'CPR', 'SIGMIS-CPR'] ,
+    'db/conf/sigcpr': ['CPR', 'SIGCPR', 'SIGMIS-CPR'] ,
     'db/conf/ifip11-4': ['iNetSec', 'iNetSeC'] ,
     'db/conf/iccS': ['ICCS','International Conference on Computational Science'] ,
     'db/conf/3dica': ['Three-Dimensional Image Capture and Applications', 'Three-Dimensional Image Processing 3DIP and Applications', 'Three-Dimensional Imaging, Interaction, and Measurement', 'Three-Dimensional Image Processing, Measurement 3DIPM, and Applications', 'Three-Dimensional Image Capture', '3D Image Processing, Measurement 3DIPM, and Applications'] ,
@@ -93,11 +93,11 @@ areadict = {
     'db/conf/iwpec': ['IWPEC','IPEC'] ,
     'db/conf/healthcom': ['HealthCom', 'Healthcom'] ,
     'db/conf/swis': ['SIS', 'SWIS'] ,
-    'db/conf/iq': ['ICIQ', 'IQ'] ,
+    'db/conf/iq': ['IQ','ICIQ'] ,
     'db/conf/ifl': ['IFL', 'Implementation of Functional Languages'] ,
     'db/conf/ats': ['ATS', 'Asian Test Symposium'] ,
-    'db/conf/sigite': ['SIGITE Conference', 'SIGITE'] ,
-    'db/conf/icsm': ['ICSME', 'ICSM'] ,
+    'db/conf/sigite': ['SIGITE','SIGITE Conference'] ,
+    'db/conf/icsm': ['ICSM','ICSME'] ,
     'db/conf/dawak': ['DaWaK', 'DaWak'] ,
     'db/conf/acssc': ['ACSSC', 'ACSCC'] ,
     'db/conf/ista': ['UNISCON', 'ISTA'] ,
@@ -138,7 +138,7 @@ areadict = {
     'db/conf/csac': ['Computer Supported Acitivity Coordination', 'Computer Supported Activity Coordination'] ,
     'db/conf/aaaifs': ['AAAI Fall Symposia', 'AAAI Fall Symposium: Artificial Intelligence for Prognostics', 'AAAI Fall Symposium: Biologically Inspired Cognitive Architectures', 'AAAI Fall Symposium: Semantic Web for Collaborative Knowledge Acquisition', 'AAAI Fall Symposium: Caring Machines', 'AAAI Fall Symposium: AI and Consciousness', 'AAAI Fall Symposium: AI in Eldercare: New Solutions to Old Problems', 'AAAI Fall Symposium: Artificial Intelligence for Gerontechnology', 'AAAI Fall Symposium: Intelligent Narrative Technologies', 'AAAI Fall Symposium: Capturing and Using Patterns for Evidence Detection', 'AAAI Fall Symposium: Naturally-Inspired Artificial Intelligence', 'AAAI Fall Symposium: Cognitive and Metacognitive Educational Systems', 'AAAI Fall Symposium: Advances in Cognitive Systems', 'AAAI Fall Symposium: Question Generation', 'AAAI Fall Symposium: Integrating Reasoning into Everyday Applications', 'AAAI Fall Symposium: Regarding the Intelligence in Distributed Intelligent Systems', 'AAAI Fall Symposium: Human Control of Bioinspired Swarms', 'AAAI Fall Symposium: Complex Adaptive Systems', 'AAAI Fall Symposium: Computational Approaches to Representation Change during Learning and Development', 'AAAI Fall Symposium: Interaction and Emergent Phenomena in Societies of Agents', 'AAAI Fall Symposium: Virtual Healthcare Interaction', 'AAAI Fall Symposium: Emergent Agents and Socialities', 'AAAI Fall Symposium: Information Retrieval and Knowledge Discovery in Biomedical Text', 'AAAI Fall Symposium: Building Representations of Common Ground with Intelligent Agents', 'AAAI Fall Symposium: Dialog with Robots', 'AAAI Fall Symposium: Proactive Assistant Agents', 'AAAI Fall Symposium: Quantum Informatics for Cognitive, Social, and Semantic Processes', 'AAAI Fall Symposium: Manifold Learning and Its Applications', 'AAAI Fall Symposium: Commonsense Knowledge', 'AAAI Fall Symposium: Multimedia Information Extraction', 'AAAI Fall Symposium: Robot-Human Teamwork in Dynamic Adverse Environment', 'AAAI Fall Symposium: Robots Learning Interactively from Human Teachers', 'AAAI Fall Symposium: Multi-Representational Architectures for Human-Level Intelligence', 'AAAI Fall Symposium: Automated Scientific Discovery', 'AAAI Fall Symposium: Developmental Systems', 'AAAI Fall Symposium: Artificial Intelligence of Humor', 'AAAI Fall Symposium: The Uses of Computational Argumentation', 'AAAI Fall Symposium: Computational Models of Narrative', 'AAAI Fall Symposium: Machine Aggregation of Human Judgment', 'AAAI Fall Symposium: Complex Adaptive Systems and the Threshold Effect', 'AAAI Fall Symposium: Coevolutionary and Coadaptive Systems', 'AAAI Fall Symposium: Aurally Informed Performance', 'AAAI Fall Symposium: Adaptive Agents in Cultural Contexts', 'AAAI Fall Symposium: Discovery Informatics', 'AAAI Fall Symposium: ALEC', 'AAAI Fall Symposium: Agents and the Semantic Web', 'AAAI Fall Symposium: Social Networks and Social Contagion', 'AAAI Fall Symposium: Spacecraft Autonomy'] ,
     'db/conf/aaaiss': ['AAAI Spring Symposia','AAAI Spring Symposium: Data Driven Wellness', 'AAAI Spring Symposium: Technosocial Predictive Analytics', 'AAAI Spring Symposium: Multidisciplinary Collaboration for Socially Assistive Robotics', 'AAAI Spring Symposium: To Boldly Go Where No Human-Robot Team Has Gone Before', 'AAAI Spring Symposium: Intelligent Narrative Technologies II', 'AAAI Spring Symposium: Using AI to Motivate Greater Participation in Computer Science',  'AAAI Spring Symposium: Artificial Intelligence and Sustainable Design', 'AAAI Spring Symposium: Persistent Assistants: Living and Working with AI', 'AAAI Spring Symposium: Cognitive Shape Processing', 'AAAI Spring Symposium: Intelligent Information Privacy Management', 'AAAI Spring Symposium: Symbiotic Relationships between Semantic Web and Knowledge Engineering', 'AAAI Spring Symposium: Interaction Challenges for Intelligent Assistants', 'AAAI Spring Symposium: Computational Approaches to Analyzing Weblogs', 'AAAI Spring Symposium: Self-Tracking and Collective Intelligence for Personal Wellness', 'AAAI Spring Symposium: Experimental Design for Real-World Systems', 'AAAI Spring Symposium: Logical Formalizations of Commonsense Reasoning', 'AAAI Spring Symposium: Semantic Scientific Knowledge Integration', 'AAAI Spring Symposium: Quantum Interaction', 'AAAI Spring Symposium: Modeling Complex Adaptive Systems as if They Were Voting Processes', 'AAAI Spring Symposium: Computational Physiology', 'AAAI Spring Symposium: Argumentation for Consumers of Healthcare', 'AAAI Spring Symposium: Emotion, Personality, and Social Behavior', 'AAAI Spring Symposium: Educational Robotics and Beyond', 'AAAI Spring Symposium: Benchmarking of Qualitative Spatial and Temporal Reasoning Systems', 'AAAI Spring Symposium: Creativity and Early Cognitive Development', 'AAAI Spring Symposium: Linked Data Meets Artificial Intelligence', 'AAAI Spring Symposium: Wisdom of the Crowd', 'AAAI Spring Symposium: Artificial Intelligence for Development', "AAAI Spring Symposium: It's All in the Timing", 'AAAI Spring Symposium: AI for Business Agility', 'AAAI Spring Symposium: Reasoning with Mental and External Diagrams: Computational Modeling and Spatial Assistance', 'AAAI Spring Symposium: AI Technologies for Homeland Security', 'AAAI Spring Symposium: Designing Intelligent Robots', 'AAAI Spring Symposium: Intelligent Web Services Meet Social Computing', 'AAAI Spring Symposium: Agents that Learn from Human Teachers', 'AAAI Spring Symposium: Between a Rock and a Hard Place: Cognitive Science Principles Meet AI-Hard Problems', 'AAAI Spring Symposium: Control Mechanisms for Spatial Knowledge Processing in Cognitive / Intelligent Systems', 'AAAI Spring Symposium: Social Information Processing', 'AAAI Spring Symposium: AI, The Fundamental Social Aggregation Challenge', 'AAAI Spring Symposium: Learning by Reading and Learning to Read', 'AAAI Spring Symposium: What Went Wrong and Why: Lessons from AI Research and Applications', 'AAAI Spring Symposium: Knowledge Collection from Volunteer Contributors', 'AAAI Spring Symposium: Embedded Reasoning', 'AAAI Spring Symposium: Lifelong Machine Learning', 'AAAI Spring Symposium: AI Meets Business Rules and Process Management', 'AAAI Spring Symposium: Towards Conscious AI Systems', 'AAAI Spring Symposium: Game Theory for Security, Sustainability, and Health', 'AAAI Spring Symposium: Challenges to Decision Support in a Changing World', 'AAAI Spring Symposium: Intelligent Event Processing', 'AAAI Spring Symposium: Distributed Plan and Schedule Management', 'AAAI Spring Symposium: Combining Machine Learning with Knowledge Engineering', 'AAAI Spring Symposium: Machine Reading', 'AAAI Spring Symposium: Semantic Web Meets eGovernment', 'AAAI Spring Symposium: Analyzing Microtext', 'AAAI Spring Symposium: Social Semantic Web: Where Web 2.0 Meets Web 3.0', 'AAAI Spring Symposium: Help Me Help You: Bridging the Gaps in Human-Agent Collaboration', 'AAAI Spring Symposium: Intentions in Intelligent Systems', 'AAAI Spring Symposium: Creative Intelligent Systems', 'AAAI Spring Symposium: Human Behavior Modeling', 'AAAI Spring Symposium: Multirobot Systems and Physical Data Structures', 'AAAI Spring Symposium: Formalizing and Compiling Background Knowledge and Its Applications to Knowledge Representation and Question Answering', 'AAAI Spring Symposium: AI and Health Communication', 'AAAI Spring Symposium: Trust and Autonomous Systems', 'AAAI Spring Symposium: Shikakeology', 'AAAI Spring Symposium: Game Theoretic and Decision Theoretic Agents'] ,
-    'db/conf/coco': ['IEEE Conference on Computational Complexity', 'Structure in Complexity Theory Conference', 'Computational Complexity Conference', 'Conference on Computational Complexity', 'Complexity of Computer Computations', 'CCC'] ,
+    'db/conf/coco': ['Conference on Computational Complexity','IEEE Conference on Computational Complexity', 'Structure in Complexity Theory Conference', 'Computational Complexity Conference', 'Complexity of Computer Computations', 'CCC'] ,
     # SIGOPS
     # - OSDI/SOSP alternate years, so are treated as one venue; USENIX ATC has two variants in DBLP
     # 'ops': ['SOSP', 'OSDI', 'EuroSys'], # 'USENIX Annual Technical Conference', 'USENIX Annual Technical Conference, General Track'],
@@ -147,7 +147,7 @@ areadict = {
     'eurosys' : ['EuroSys'], # next tier
     'fast' : ['FAST'], # next tier
     'db/conf/sbm': ['SBIM', 'SBM'] ,
-    'usenixatc' : ['USENIX Annual Technical Conference', 'USENIX Annual Technical Conference, General Track','USENIX Winter', 'USENIX Summer', 'USENIX'], # next tier
+    'usenixatc' : ['USENIX','USENIX Annual Technical Conference', 'USENIX Annual Technical Conference, General Track','USENIX Winter', 'USENIX Summer'], # next tier
     # SIGMETRICS
     # - Two variants for each, as in DBLP.
     # 'metrics': ['SIGMETRICS', 'SIGMETRICS/Performance', 'POMACS','IMC', 'Internet Measurement Conference'],
@@ -207,7 +207,7 @@ areadict = {
     'lics' : ['LICS', 'CSL-LICS'],
     # SIGACT
     # 'act': ['STOC', 'FOCS', 'SODA'],
-    'focs': ['FOCS','SWAT (FOCS)','SWAT','SWCT'],
+    'focs': ['FOCS','SWAT (FOCS)','SWCT'],
     'stoc': ['STOC'],
     'soda': ['SODA'],
     'IS':['IS','IEEE Conf. of Intelligent Systems','IEEE Conf. on Intelligent Systems'],
