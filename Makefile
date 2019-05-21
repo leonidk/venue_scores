@@ -68,15 +68,15 @@ parsed_files.pkl.gz: faculty-affiliations.csv download/dblp.xml.gz download/dblp
 
 weights_faculty_above6_linear_2_40_25_0.pkl: useful_papers.pkl.gz
 	-REGRESSION_TASK_IDX=0 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	-rm *.nbconvert.ipynb
+	#-rm *.nbconvert.ipynb
 
 weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz nsf2.pkl
 	-REGRESSION_TASK_IDX=1 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	-rm *.nbconvert.ipynb
+	#-rm *.nbconvert.ipynb
 
 weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz
 	-REGRESSION_TASK_IDX=3 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleaned_venues_to_weights.ipynb
-	-rm *.nbconvert.ipynb
+	#-rm *.nbconvert.ipynb
 
 clf_gold.pkl.npy: weights_faculty_above6_linear_2_40_25_0.pkl weights_nsfmarginal_above6_log_2_0_25_0.pkl weights_salary_above6_linear_2_0_25_0.pkl new_pagerank_people.pkl mask.npy
 	COMBINE_CLIP=$(COMBINE_CLIP) jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute combine_weights.ipynb

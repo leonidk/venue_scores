@@ -484,6 +484,7 @@ main_log = []
 
 existing_tags = {}
 named_aliases = []
+authors_with_info = []
 for event, elem in parser:
     title, authors, venue, pages, startPage,year, volume,number,url,publtype,eb_toofew,eb_skip= None, [], None, -1, -1, 0, '0', '0','',None,False,False
     insert_data = True
@@ -493,6 +494,16 @@ for event, elem in parser:
         is_homepage = sum(['Home Page' in _.text for _ in tag_info if _.tag == 'title']) > 0
         if is_homepage and len(author_names) > 1:
             named_aliases.append(author_names)
+        # optional stuffl
+        urls = [_.text for _ in tag_info if _.tag == 'url']
+        affil = [(_.text,_.get('label','')) for _ in tag_info if _.tag == 'note' if _.get('type','') == 'affiliation']
+        if len(affil) >= 1:
+            authors_with_info.append((author_names,urls,affil))
+        # keep memory consumption sensible
+        elem.clear()
+        for ancestor in elem.xpath('ancestor-or-self::*'):
+            while ancestor.getprevious() is not None:
+                del ancestor.getparent()[0]
 
     #existing_tags[elem.tag] = 1 + existing_tags.get(elem.tag,0)
     if elem.tag in {"article", "inproceedings", "proceedings", "book", "incollection"}:
@@ -672,3 +683,5 @@ with gzip.open('dblp_aliases_auto.pkl.gz','wb') as fp:
     pickle.dump(named_aliases,fp, -1)
 with gzip.open('parsed_files.pkl.gz','wb') as fp:
     pickle.dump(main_log,fp, -1)
+with gzip.open('authors_with_info.pkl.gz','wb') as fp:
+    pickle.dump(authors_with_info,fp, -1)
