@@ -2,7 +2,7 @@
 0,110,WWW,World Wide Web,2922,World Wide Web Conference Series,WWW
 1,69,ISWC,World Wide Web,1206,International Semantic Web Conference,International Semantic Web Conference
 2,63,Hypertext,World Wide Web,932,ACM Conference on Hypertext,Hypertext
-3,56,,World Wide Web,141,Internet Measurement Workshop,Internet Measurement Workshop
+3,56,IMC,World Wide Web,141,Internet Measurement Conference,IMC
 4,48,USITS,World Wide Web,101,USENIX Symposium on Internet Technologies and Systems,USENIX Symposium on Internet Technologies and Systems
 5,39,WebDB,World Wide Web,232,International Workshop on the Web and Databases,WebDB
 6,37,ICWS,World Wide Web,1328,International Conference on Web Services,ICWS
@@ -2167,7 +2167,7 @@
 2165,51,BMVC,Computer Vision,1524,British Machine Vision Conference,BMVC
 2166,34,WACV,Computer Vision,759,Workshop on Applications of Computer Vision,WACV
 2167,30,ACCV,Computer Vision,1215,Asian Conference on Computer Vision,ACCV
-2168,30,3DIM,Computer Vision,349,International Conference on 3-D Imaging and Modeling,NotAConf
+2168,30,3DV,Computer Vision,349,International Conference on 3-D Imaging and Modeling,3DV
 2169,24,Scale-Space,Computer Vision,386,Scale-Space Theories in Computer Vision,Scale-Space
 2170,24,ICVS,Computer Vision,294,International Conference on Computer Vision Systems,ICVS
 2171,24,CVRMed,Computer Vision,164,"Computer Vision, Virtual Reality and Robotics in Medicine",CVRMed

@@ -21,8 +21,8 @@
     "category": "World Wide Web"
   },
   {
-    "abbrv": null,
-    "name": "Internet Measurement Workshop",
+    "abbrv": "IMC",
+    "name": "Internet Measurement Conference",
     "citations": 141,
     "H": 56,
     "category": "World Wide Web"
@@ -15176,7 +15176,7 @@
     "category": "Computer Vision"
   },
   {
-    "abbrv": "3DIM",
+    "abbrv": "3DV",
     "name": "International Conference on 3-D Imaging and Modeling",
     "citations": 349,
     "H": 30,
