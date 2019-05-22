@@ -18,6 +18,9 @@ __pycache__/
 *.pdf
 *.npy
 
+# should autogen this always
+cleaned_venues_to_weights.py
+
 # Distribution / packaging
 .Python
 build/
