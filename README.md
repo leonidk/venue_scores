@@ -13,8 +13,8 @@ This paper proposes an automatic pipeline for ranking and organizing academic co
 * See the paper for more technical details. 
 
 # requirements
-Initial development and testing was on a MacOS 10.13 system. However to work on Ubuntu 18.04, the following command installed all needed tools on top of a fresh install
-`sudo apt-get install python3.6 python3-lxml wget python3-nbconvert python3-notebook jupyter-nbconvert jupyter python3-numpy python3-scipy python3-pandas python3-matplotlib python3-sklearn python3-xmltodict`
+Initial development and testing was on a MacOS 10.13 system. However to work on Ubuntu 18.04 LTS, the following command installed all needed tools on top of a fresh install
+`sudo apt-get install python3.6 python3-lxml wget python3-nbconvert python3-notebook jupyter-nbconvert jupyter python3-numpy python3-scipy python3-pandas python3-matplotlib python3-sklearn python3-xmltodict python3-unidecode`
 
 ## overview
 The dependencies for this project are Jupyter Notebooks with Python3 and numpy, scipy, pandas, lxml and scikit-learn libraries. Run `make` to download all of the appropriate data from DBLP, [CSRankings](https://github.com/emeryberger/CSrankings), the NSF, Transparent California, and Scholar Rank. The Makefile script will then pre-process the data (using `my_dblp_parser.py` and `cleanup_venues.ipynb`) into three main datafiles, `useful_authors_list.pkl.gz useful_papers.pkl.gz useful_venue_list.pkl.gz`.  Then the following programs are useful in generating rankings and clusterings
