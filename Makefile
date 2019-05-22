@@ -9,13 +9,13 @@
 # this is the golden ratio
 #SIZE_NORM = 1.618
 # Hausdorff dimension of Spierpinsky Triangle
-#SIZE_NORM = 1.5849625
+SIZE_NORM = 1.5849625
 # Area of Mandelbrot Fractal
 #SIZE_NORM = 1.50659
 # this is one and a half
 #SIZE_NORM = 1.5
 # this is going to use log(size)
-SIZE_NORM = -1
+#SIZE_NORM = -1
 
 # normalize by number of conferences in a given year
 CONF_NUM_NORM = 1
