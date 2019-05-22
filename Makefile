@@ -23,7 +23,7 @@ CONF_NUM_NORM = 1
 # clipping coeff for combining weights
 COMBINE_CLIP = 14
 
-all:   clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
+all:   clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx
 .PHONY: all cleanup
 
 cleanup:
@@ -78,7 +78,7 @@ weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz nsf2.pkl
 	REGRESSION_TASK_IDX=1 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) python3 cleaned_venues_to_weights.py
 	rm cleaned_venues_to_weights.py
 
-weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz
+weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
 	jupyter nbconvert --to script cleaned_venues_to_weights.ipynb
 	REGRESSION_TASK_IDX=3 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) python3 cleaned_venues_to_weights.py
 	rm cleaned_venues_to_weights.py
