@@ -33,6 +33,4 @@ This code was all developed and run on a personal laptop.
 * `old_ranks` contains other ranking data. Including `uni_rank_*.csv`, which are rankings contain university ranking data from many sources, all with consistent university naming. `correlation_cleaned.csv` contains the dataset of CMU faculty members with their traditional ranking measures. `traditional_conf_scores.csv` contains the traditional conference ranking data (along with `msar.json`). `ranks.csv` is a snapshot of the CSRankings ranks from our development time. `r1.csv` is a list of all R1 Research Universities. `faculty_affil_scholar.csv` contains the data parsed from [ScholarRank](http://www.dabi.temple.edu/~vucetic/CSranking/details/). 
 * `acm2017` contains data files for processing and aligning [CSRankings](https://github.com/emeryberger/CSrankings) data with [ScholarRank](http://www.dabi.temple.edu/~vucetic/CSranking/details/) data. 
 
-# notes
-* There's a terrible hack to update sparse_dok scipy matrices. The documentation claims `scipy.sparse.dok_matrix.update()` exists but it doesn't. Old versions have it, new versions have `._update()`. I use `.__dict__.update()` to update the dictionary directly
 
