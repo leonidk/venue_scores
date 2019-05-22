@@ -12,6 +12,10 @@ This paper proposes an automatic pipeline for ranking and organizing academic co
 * Preprint archives and short papers have been excluded from most of our analysis via a filter (see pipeline information below). However, you're free to fork this project and add it back in if you'd like! 
 * See the paper for more technical details. 
 
+# requirements
+Initial development and testing was on a MacOS 10.13 system. However to work on Ubuntu 18.04, the following command installed all needed tools on top of a fresh install
+`sudo apt-get install python3.6 python3-lxml wget python3-nbconvert python3-notebook jupyter-nbconvert jupyter python3-numpy python3-scipy python3-pandas python3-matplotlib python3-sklearn`
+
 ## overview
 The dependencies for this project are Jupyter Notebooks with Python3 and numpy, scipy, pandas, lxml and scikit-learn libraries. Run `make` to download all of the appropriate data from DBLP, [CSRankings](https://github.com/emeryberger/CSrankings), the NSF, Transparent California, and Scholar Rank. The Makefile script will then pre-process the data (using `my_dblp_parser.py` and `cleanup_venues.ipynb`) into three main datafiles, `useful_authors_list.pkl.gz useful_papers.pkl.gz useful_venue_list.pkl.gz`.  Then the following programs are useful in generating rankings and clusterings
 * `cleaned_venues_to_weights.ipynb` generates conference rankings using a regression function. The top notebook block contains a variety of settings and hyper-parameters to chose what dataset to fit.
@@ -26,3 +30,7 @@ This code was all developed and run on a personal laptop.
 * `old_version` contains the first version of this codebase, mostly for historical reference
 * `old_ranks` contains other ranking data. Including `uni_rank_*.csv`, which are rankings contain university ranking data from many sources, all with consistent university naming. `correlation_cleaned.csv` contains the dataset of CMU faculty members with their traditional ranking measures. `traditional_conf_scores.csv` contains the traditional conference ranking data (along with `msar.json`). `ranks.csv` is a snapshot of the CSRankings ranks from our development time. `r1.csv` is a list of all R1 Research Universities. `faculty_affil_scholar.csv` contains the data parsed from [ScholarRank](http://www.dabi.temple.edu/~vucetic/CSranking/details/). 
 * `acm2017` contains data files for processing and aligning [CSRankings](https://github.com/emeryberger/CSrankings) data with [ScholarRank](http://www.dabi.temple.edu/~vucetic/CSranking/details/) data. 
+
+# notes
+* There's a terrible hack to update sparse_dok scipy matrices. The documentation claims `scipy.sparse.dok_matrix.update()` exists but it doesn't. Old versions have it, new versions have `._update()`. I use `.__dict__.update()` to update the dictionary directly
+
