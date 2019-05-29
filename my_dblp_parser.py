@@ -282,7 +282,7 @@ areadict = {
     'ismb': ['ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)'],
     'recomb' : ['RECOMB'],
     # special handling of IEEE TVCG to select IEEE Vis and VR proceedings
-    'vis': ['IEEE Visualization', 'IEEE Trans. Vis. Comput. Graph.'],
+    'vis': ['IEEE Visualization'],
     'vr' : ['VR'],
     # 'ecom' : ['EC', 'WINE']
     'ec' : ['EC'],
@@ -637,6 +637,7 @@ for event, elem in parser:
                 (vol, num) = TVCG_Vis_Volume[year]
                 if (volume == str(vol)) and (number == str(num)):
                     Vis_Conf = True
+                    venue = 'IEEE Visualization'
             if year in TVCG_VR_Volume:
                 (vol, num) = TVCG_VR_Volume[year]
                 if (volume == str(vol)) and (number == str(num)):
