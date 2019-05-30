@@ -148,7 +148,6 @@ areadict = {
     'db/journals/tsp': ['IEEE Trans. Signal Processing', 'IEEE Trans. Acoustics, Speech, and Signal Processing'] ,
     'db/journals/jossr': ['JoSS', 'JoSSR'] ,
     'db/conf/evolve': ['EVOLVE','EVOLVE III'] ,
-    'db/conf/csoc': ['CSOC', 'CSOS'] ,
     'db/conf/mod': ['LOD', 'MOD'] ,
     'db/conf/sies': ['SIES', 'IES'] ,
     'db/conf/nanonet': ['Nano-Net', 'NanoNet'] ,
@@ -189,7 +188,7 @@ areadict = {
     'ics': ['ICS'],
     # SIGBED
     # 'bed': ['RTSS', 'RTAS', 'IEEE Real-Time and Embedded Technology and Applications Symposium', 'EMSOFT'],
-    'emsoft': ['EMSOFT', 'ACM Trans. Embedded Comput. Syst.'], # TECS: issue number & page numbers must be checked
+    'emsoft': ['EMSOFT'], # TECS: issue number & page numbers must be checked
     'rtss' : ['RTSS'],
     'rtas' : ['RTAS', 'IEEE Real-Time and Embedded Technology and Applications Symposium'],
     # SIGDA
@@ -279,7 +278,7 @@ areadict = {
     # SIGBio
     # - special handling for ISMB proceedings in Bioinformatics special issues.
     # 'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)'],
-    'ismb': ['ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)'],
+    'ismb': ['ISMB', 'ISMB/ECCB (Supplement of Bioinformatics)', 'ISMB (Supplement of Bioinformatics)'],
     'recomb' : ['RECOMB'],
     # special handling of IEEE TVCG to select IEEE Vis and VR proceedings
     'vis': ['IEEE Visualization'],
@@ -560,10 +559,7 @@ for event, elem in parser:
                     pseudovolume = int(pvmatcher.group(1))
                     (startpv, endpv) = EMSOFT_TECS_PaperNumbers[year]
                     if pseudovolume < int(startpv) or pseudovolume > int(endpv):
-                        eb_skip = True
-            else:
-                eb_skip = True
-
+                        venue = 'EMSOFT'
 
         if venue == 'PACMPL':
             venue = number
@@ -595,18 +591,19 @@ for event, elem in parser:
             if year in ISMB_Bioinformatics:
                 (vol, num) = ISMB_Bioinformatics[year]
                 if (volume != str(vol)) or (number != str(num)):
-                    eb_skip = True
+                    pass
                 else:
                     if (int(volume) >= 33): # Hopefully this works going forward.
                         pg = ISMBpageCounter.match(pageCount)
                         if pg == None:
-                            eb_skip = True
+                            pass
                         else:
                             startPage = int(pg.group(1))
                             end = int(pg.group(2))
                             pages = end - startPage + 1
+                            venue = 'ISMB'
             else:
-                eb_skip = True
+                pass
         # Special handling for SIGMOD.
         elif venue == 'SIGMOD Conference':
             if year in SIGMOD_NonResearchPaperStart:
@@ -623,12 +620,14 @@ for event, elem in parser:
             if year in TOG_SIGGRAPH_Volume:
                 (vol, num) = TOG_SIGGRAPH_Volume[year]
                 if not ((volume == str(vol)) and (number == str(num))):
-                    eb_skip = True
+                    #eb_skip = True
+                    pass
         elif venue in areadict['siggraph-asia']: # == 'ACM Trans. Graph.':
             if year in TOG_SIGGRAPH_Asia_Volume:
                 (vol, num) = TOG_SIGGRAPH_Asia_Volume[year]
                 if not((volume == str(vol)) and (number == str(num))):
-                    eb_skip = True
+                    #eb_skip = True
+                    pass
 
         # Special handling for IEEE Vis and VR
         elif venue == 'IEEE Trans. Vis. Comput. Graph.':
@@ -642,15 +641,17 @@ for event, elem in parser:
                 (vol, num) = TVCG_VR_Volume[year]
                 if (volume == str(vol)) and (number == str(num)):
                     Vis_Conf = True
-            if not Vis_Conf:
-                eb_skip = True
+            #if not Vis_Conf:
+            #    eb_skip = True
 
         # Disambiguate Innovations in (Theoretical) Computer Science from
         # International Conference on Supercomputing
         elif venue == 'ICS':
             if not url is None:
                 if url.find('innovations') != -1:
-                    eb_skip = True
+                    venue = 'Innovations in (Theoretical) Computer Science'
+                else:
+                    venue = 'International Conference on Supercomputing'
         if pages == -1 and venue == 'ACM Conference on Computer and Communications Security':
             eb_toofew = True
 
