@@ -26,7 +26,7 @@ ITA,ITA
 CISS,CISS
 IEEE Trans. Information Theory,IEEE TIT
 Allerton,Allerton
-IEEE Visualization,IEEE Visu
+IEEE Visualization,IEEE Vis
 IEEE Trans. Signal Processing,IEEE-TSP
 IEEE Trans. Pattern Anal. Mach. Intell.,PAMI
 CVPR,CVPR
@@ -111,7 +111,7 @@ ICNP,ICNP
 MobiHoc,MobiHoc
 IWQoS,IWQoS
 SIGMETRICS Performance Evaluation Review,SIGMETRICS PER
-IEEE/ACM Trans. Netw.,IEEE/ACM Trans. Netw.
+IEEE/ACM Trans. Netw.,IEEE/ACM TON
 UIST,UIST
 ASSETS,ASSETS
 UbiComp,UbiComp
@@ -123,7 +123,7 @@ SIGGRAPH,SIGGRAPH
 Symposium on Computer Animation,SCA
 SIGGRAPH Asia,SIGGRAPH Asia
 I3D,I3D
-Comput. Graph. Forum,Comput. Graph. Forum
+Comput. Graph. Forum,CGF
 SIGIR,SIGIR
 SIAM Review,SIAM Review
 JCDL,JCDL
@@ -147,7 +147,7 @@ UAI,UAI
 AAAI,AAAI
 AI Magazine,AI Magazine
 GameSec,GameSec
-J. Artif. Intell. Res.,J. Artif. Intell. Res.
+J. Artif. Intell. Res.,JAIR
 COLT,COLT
 NIPS,NIPS
 ICML,ICML
@@ -182,3 +182,16 @@ USENIX Annual Technical Conference,USENIX ATC
 Mobile Computing and Communications Review,MC2R
 IEEE Conference on Computational Complexity,IEEE CCC
 ACM Trans. Economics and Comput.,ACM TEAC
+Conference on Designing Interactive Systems,DIS
+Conference on Computational Complexity,CCC
+APPROX-RANDOM,APPROX-RANDOM
+IEEE Trans. Med. Imaging,IEEE T-MI
+Canadian Conference on AI,CCAI
+IEEE Trans. Vis. Comput. Graph.,TVCG
+IEEE Trans. on CAD of Integrated Circuits and Systems,IEEE TCAD
+IEEE/ACM Trans. Comput. Biology Bioinform.,IEEE TCBB
+ACM Trans. Embedded Comput. Syst.,ACM TECS
+IEEE Trans. Mob. Comput.,IEEE TMC
+International Conference on Supercomputing,ICS
+Games and Economic Behavior,GEB
+HotWireless@MobiCom,HotWireless
