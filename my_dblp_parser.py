@@ -662,9 +662,12 @@ for event, elem in parser:
         elif venue == 'ICS':
             if not url is None:
                 if url.find('innovations') != -1:
-                    venue = 'Innovations in (Theoretical) Computer Science'
+                    venue = 'ITCS'
                 else:
                     venue = 'International Conference on Supercomputing'
+        elif venue == 'ICCC':
+            if url.find('db/conf') != -1:
+                venue = (url.split('/')[:3])[-1]
         if pages == -1 and venue == 'ACM Conference on Computer and Communications Security':
             eb_toofew = True
 

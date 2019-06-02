@@ -152,9 +152,8 @@ COLT,
 NIPS,Machine Learning
 ICML,Machine Learning
 AISTATS,
-Journal of Machine Learning Research,
-ACM Multimedia,
-HSCC,
+Journal of Machine Learning Research,Machine Learning
+HSCC,Control
 IEEE Trans. Automat. Contr.,Control
 IEEE Trans. Control of Network Systems,Control
 IEEE Trans. Contr. Sys. Techn.,Control
@@ -198,3 +197,11 @@ GLOBECOM,Systems
 AIIDE,ML
 IJCNN,ML
 SMC,ML
+FDG,Entertainment
+AIIDE,Entertainment
+IPDPS,Parallel
+PPOPP,Parallel
+ICME,Multimedia
+MMSys,Multimedia
+ACM Multimedia,Multimedia
+ICSC,Semantic
