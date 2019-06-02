@@ -291,7 +291,7 @@ areadict = {
     # SIGBio
     # - special handling for ISMB proceedings in Bioinformatics special issues.
     # 'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)'],
-    'ismb': ['ISMB', 'ISMB/ECCB (Supplement of Bioinformatics)', 'ISMB (Supplement of Bioinformatics)'],
+    'ismb': ['ISMB', 'ISMB/ECCB (Supplement of Bioinformatics)', 'ISMB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB]', 'Bioinformatics [ISMB/ECCB]'],
     'recomb' : ['RECOMB'],
     # special handling of IEEE TVCG to select IEEE Vis and VR proceedings
     'vis': ['IEEE Visualization'],
