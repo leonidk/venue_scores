@@ -13,9 +13,9 @@ ICCPS,
 Robotics: Science and Systems,Robotics
 I. J. Robotics Res.,Robotics
 WAFR,Robotics
-Auton. Robots,
-IEEE Robot. Automat. Mag.,
-IEEE Trans. Robotics,
+Auton. Robots,Robotics
+IEEE Robot. Automat. Mag.,Robotics
+IEEE Trans. Robotics,Robotics
 EMNLP,NLP
 ACL,NLP
 Computational Linguistics,NLP
@@ -24,16 +24,16 @@ CoNLL,
 NAACL,
 ITA,
 CISS,
-IEEE Trans. Information Theory,
-Allerton,
-IEEE Visualization,
+IEEE Trans. Information Theory,EE Theory
+Allerton,EE Theory
+IEEE Visualization,Visualization
 IEEE Trans. Signal Processing,
-IEEE Trans. Pattern Anal. Mach. Intell.,
+IEEE Trans. Pattern Anal. Mach. Intell.,Computer Vision
 CVPR,Computer Vision
 International Journal of Computer Vision,Computer Vision
 WACV,
 IEEE Trans. Image Processing,
-CVPR Workshops,
+CVPR Workshops,Computer Vision
 CODES+ISSS,
 ISLPED,
 JETC,
@@ -72,8 +72,8 @@ ICAC,
 MASCOTS,
 TKDD,
 KDD,Data Mining
-SDM,
-WWW,
+SDM,Data Mining
+WWW,Data Mining
 SIGKDD Explorations,
 IEEE Trans. Knowl. Data Eng.,
 DNA,
@@ -113,7 +113,7 @@ IWQoS,
 SIGMETRICS Performance Evaluation Review,
 IEEE/ACM Trans. Netw.,
 UIST,HCI
-ASSETS,
+ASSETS,HCI
 UbiComp,HCI
 CSCW,HCI
 CHI,HCI
@@ -126,11 +126,11 @@ I3D,Graphics
 Comput. Graph. Forum,Graphics
 SIGIR,Information Retrieval
 SIAM Review,
-JCDL,
+JCDL,Information Retrieval
 SIAM J. Matrix Analysis Applications,
 J. Sci. Comput.,Scientific Computing
 SIAM J. Scientific Computing,Scientific Computing
-EMSOFT,
+EMSOFT,Embedded
 CAV,
 VMCAI,
 FMCAD,
@@ -143,8 +143,8 @@ CCS,
 PoPETs,Security
 RAID,
 SIGecom Exchanges,Economics
-UAI,
-AAAI,
+UAI,AI
+AAAI,AI
 AI Magazine,
 GameSec,
 J. Artif. Intell. Res.,
@@ -193,3 +193,8 @@ Commun. ACM,Computer Science
 Proceedings of the IEEE,Computer Science
 HSCC,Cyber Physical
 ICCPS,Cyber Physical
+INFOCOM,Systems
+GLOBECOM,Systems
+AIIDE,ML
+IJCNN,ML
+SMC,ML

@@ -50,6 +50,7 @@ areadict = {
     'icfp'   : ['ICFP'],   # Next tier
     'pacmpl' : ['PACMPL'], # Special PACMPL handling below
     'sbp': ['SBP','SBP-BRiMS'],
+    'jcdl': ['JCDL','ACM DL','ADL','Digital Libraries','DL'],
     'db/conf/dna': ['DNA', 'DNA Computing'] ,
     'db/conf/dcc': ['DCC', 'Data Compression Conference'] ,
     'db/conf/dft': ['DFT', 'DFTS'] ,
@@ -279,6 +280,9 @@ areadict = {
     'icme': ['ICME','ICMCS'],
     'db/conf/ismar': ['ISMAR', 'ISAR', 'IWAR'] ,
     'rss': ['Robotics: Science and Systems'],
+    'db/conf/acsc': ['ACSC', 'ACSW'] ,
+    'db/conf/icfhr': ['ICFHR', 'IWFHR'],
+    'db/conf/icica': ['ICICA', 'ICICA LNCS'] ,
     'db/conf/tapsoft': ['TAPSOFT', 'TAPSOFT, Vol.1', 'TAPSOFT, Vol.2'] ,
     'db/conf/ics': ['International Conference on Supercomputing', 'ICS 25th Anniversary'] ,
     # 'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)'],
