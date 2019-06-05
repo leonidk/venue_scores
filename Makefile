@@ -5,7 +5,7 @@
 # this is sqrt of 2
 #SIZE_NORM = 1.4142
 # this is 2
-#SIZE_NORM = 2
+#SIZE_NORM = 0
 # this is the golden ratio
 #SIZE_NORM = 1.618
 # Hausdorff dimension of Spierpinsky Triangle
