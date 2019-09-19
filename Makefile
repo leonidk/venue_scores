@@ -38,6 +38,9 @@ csrankings.csv:
 industry.csv:
 	wget -N https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/old/industry.csv
 
+download/university-of-california-2018.csv: |download
+	cd download && wget -nc https://transcal.s3.amazonaws.com/public/export/university-of-california-2018.csv
+
 download/university-of-california-2017.csv: |download
 	cd download && wget -nc https://transcal.s3.amazonaws.com/public/export/university-of-california-2017.csv
 
@@ -79,7 +82,7 @@ weights_faculty_above6_linear_2_75_25_0.pkl: useful_papers.pkl.gz cleaned_venues
 weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz nsf2.pkl cleaned_venues_to_weights.py
 	REGRESSION_TASK_IDX=1 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) python3 cleaned_venues_to_weights.py
 
-weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz cleaned_venues_to_weights.py download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv
+weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz cleaned_venues_to_weights.py download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv download/university-of-california-2018.csv
 	REGRESSION_TASK_IDX=3 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) python3 cleaned_venues_to_weights.py
 
 clf_gold.pkl.npy: weights_faculty_above6_linear_2_75_25_0.pkl weights_nsfmarginal_above6_log_2_0_25_0.pkl weights_salary_above6_linear_2_0_25_0.pkl new_pagerank_people.pkl mask.npy
