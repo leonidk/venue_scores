@@ -21,6 +21,7 @@ areadict = {
     #
     # SIGPLAN
 #    'plan' : ['POPL', 'PLDI', 'PACMPL'],  # PACMPL, issue POPL
+    'iclr':['ICLR','ICLR Poster'],
     '3dv': ['3DV','3DIMPVT','3DPVT','3DIM'],
     'i3d': ['I3D','SI3D'],
     'wacv': ['WACV','WACV/MOTION'],
@@ -261,7 +262,7 @@ areadict = {
 #            'EMNLP-CoNLL',  # -- in 2012 was joint
 #            'HLT/EMNLP',  # -- in 2005 was joint
 #            ],
-    'emnlp': ['EMNLP', 'EMNLP-CoNLL', 'HLT/EMNLP'],
+    'emnlp': ['EMNLP', 'EMNLP-CoNLL', 'HLT/EMNLP', 'EMNLP-IJCNLP'], 
     'acl' : ['ACL', 'ACL (1)', 'ACL (2)', 'ACL/IJCNLP', 'COLING-ACL'],
     'naacl' : ['NAACL', 'HLT-NAACL', 'NAACL-HLT', 'NAACL-HLT (1)','NAACL-HLT (2)'],
 #    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)'],
@@ -313,7 +314,8 @@ EMSOFT_TECS_PaperNumbers = { 2017: (163, 190) } # "pages" 163--190
 
 # ISMB proceedings are published as special issues of Bioinformatics.
 # Here is the list.
-ISMB_Bioinformatics = {2018: (34, 13),
+ISMB_Bioinformatics = {2019: (35, 14),
+                       2018: (34, 13),
                        2017: (33, 14),
                        2016: (32, 12),
                        2015: (31, 12),
@@ -346,8 +348,10 @@ TOG_SIGGRAPH_Volume = {2021: (40, 4),
                        2007: (26, 3),
                        2006: (25, 3),
                        2005: (24, 3),
-                       2004: (23, 3)
-                       }
+                       2004: (23, 3),
+                       2003: (22, 3),
+                       2002: (21, 3)
+                    }
 
 # TOG special handling to count only SIGGRAPH Asia proceedings.
 # Assuming all will be in the same issues through 2021.
@@ -388,7 +392,7 @@ TVCG_Vis_Volume = {2021: (27, 1),
 # TVCG special handling to count only IEEE VR
 TVCG_VR_Volume = {2021: (27, 4),
                   2020: (26, 4),
-                  2019: (25, 4),
+                  2019: (25, 5),
                   2018: (24, 4),
                   2017: (23, 4),
                   2016: (22, 4),
@@ -678,13 +682,14 @@ for event, elem in parser:
             exceptionConference |= venue == 'SIGSOFT FSE' and year == 2012
             exceptionConference |= venue == 'ACM Trans. Graph.' and int(volume) >= 26 and int(volume) <= 36
             exceptionConference |= venue == 'SIGGRAPH' and int(volume) >= 26 and int(volume) <= 36
+            exceptionConference |= venue == 'SIGGRAPH Asia'
             exceptionConference |= venue == 'CHI' and year == 2018 # FIXME - hopefully DBLP will fix
             exceptionConference |= venue == 'ICCAD' and year == 2018
             exceptionConference |= venue == 'CHI' and year == 2019
             exceptionConference |= venue == 'FAST' and year == 2012
             if exceptionConference:
                 eb_toofew = False
-        
+
 
 
 
@@ -697,10 +702,12 @@ for event, elem in parser:
             # turn CVPR (1) to CVPR
             if len(split_venue) > 0 and len(split_venue[-1]) > 2 and split_venue[-1][-1] == ')' and split_venue[-1][1:-1].isnumeric():
                 venue = ' '.join(split_venue[:-1])
+            venue = inverse_area_dict.get(venue,venue)
 
             if venue != None:
                 venue = venue.replace('SIGGRAPH ASIA','SIGGRAPH Asia')
                 venue = venue.replace('(','').replace(')','')
+            venue = inverse_area_dict.get(venue,venue)
 
             data = (elem.tag,title, authors, venue, pages, startPage,year,volume,number,url,publtype,eb_toofew,eb_skip)
             main_log.append(data)
