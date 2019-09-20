@@ -3,13 +3,13 @@
 # this is the fractal dimension of a Koch snowflake
 #SIZE_NORM = 1.26186
 # this is sqrt of 2
-#SIZE_NORM = 1.4142
+SIZE_NORM = 1.4142
 # this is 2
 #SIZE_NORM = 0
 # this is the golden ratio
 #SIZE_NORM = 1.618
 # Hausdorff dimension of Spierpinsky Triangle
-SIZE_NORM = 1.5849625
+#SIZE_NORM = 1.5849625
 # Area of Mandelbrot Fractal
 #SIZE_NORM = 1.50659
 # this is one and a half
