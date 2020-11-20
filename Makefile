@@ -38,6 +38,9 @@ csrankings.csv:
 industry.csv:
 	wget -N https://raw.githubusercontent.com/emeryberger/CSrankings/gh-pages/old/industry.csv
 
+download/university-of-california-2019.csv: |download
+	cd download && wget -nc https://transcal.s3.amazonaws.com/public/export/university-of-california-2019.csv
+
 download/university-of-california-2018.csv: |download
 	cd download && wget -nc https://transcal.s3.amazonaws.com/public/export/university-of-california-2018.csv
 
@@ -82,7 +85,7 @@ weights_faculty_above6_linear_2_75_25_0.pkl: useful_papers.pkl.gz cleaned_venues
 weights_nsfmarginal_above6_log_2_0_25_0.pkl: useful_papers.pkl.gz nsf2.pkl cleaned_venues_to_weights.py
 	REGRESSION_TASK_IDX=1 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) python3 cleaned_venues_to_weights.py
 
-weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz cleaned_venues_to_weights.py download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv download/university-of-california-2018.csv
+weights_salary_above6_linear_2_0_25_0.pkl: useful_papers.pkl.gz cleaned_venues_to_weights.py download/university-of-california-2015.csv download/university-of-california-2016.csv download/university-of-california-2017.csv download/university-of-california-2018.csv download/university-of-california-2019.csv
 	REGRESSION_TASK_IDX=3 REGRESSION_NORM_CONF_NUM=$(CONF_NUM_NORM) REGRESSION_SIZE_NORM=$(SIZE_NORM) python3 cleaned_venues_to_weights.py
 
 clf_gold.pkl.npy: weights_faculty_above6_linear_2_75_25_0.pkl weights_nsfmarginal_above6_log_2_0_25_0.pkl weights_salary_above6_linear_2_0_25_0.pkl new_pagerank_people.pkl mask.npy
@@ -112,7 +115,7 @@ acm2017/all_professors.xlsx:
 acm2017/all_departments.xlsx:
 	cd acm2017 && wget -nc http://www.dabi.temple.edu/~vucetic/CSranking/raw_data/all_departments.xlsx
 
-download/nsffile: download/nsf/1970.zip download/nsf/1971.zip download/nsf/1972.zip download/nsf/1973.zip download/nsf/1974.zip download/nsf/1975.zip download/nsf/1976.zip download/nsf/1977.zip download/nsf/1978.zip download/nsf/1979.zip download/nsf/1980.zip download/nsf/1981.zip download/nsf/1982.zip download/nsf/1983.zip download/nsf/1984.zip download/nsf/1985.zip download/nsf/1986.zip download/nsf/1987.zip download/nsf/1988.zip download/nsf/1989.zip download/nsf/1990.zip download/nsf/1991.zip download/nsf/1992.zip download/nsf/1993.zip download/nsf/1994.zip download/nsf/1995.zip download/nsf/1996.zip download/nsf/1997.zip download/nsf/1998.zip download/nsf/1999.zip download/nsf/2000.zip download/nsf/2001.zip download/nsf/2002.zip download/nsf/2003.zip download/nsf/2004.zip download/nsf/2005.zip download/nsf/2006.zip download/nsf/2007.zip download/nsf/2008.zip download/nsf/2009.zip download/nsf/2010.zip download/nsf/2011.zip download/nsf/2012.zip download/nsf/2013.zip download/nsf/2014.zip download/nsf/2015.zip download/nsf/2016.zip download/nsf/2017.zip download/nsf/2018.zip download/nsf/2019.zip 
+download/nsffile: download/nsf/1970.zip download/nsf/1971.zip download/nsf/1972.zip download/nsf/1973.zip download/nsf/1974.zip download/nsf/1975.zip download/nsf/1976.zip download/nsf/1977.zip download/nsf/1978.zip download/nsf/1979.zip download/nsf/1980.zip download/nsf/1981.zip download/nsf/1982.zip download/nsf/1983.zip download/nsf/1984.zip download/nsf/1985.zip download/nsf/1986.zip download/nsf/1987.zip download/nsf/1988.zip download/nsf/1989.zip download/nsf/1990.zip download/nsf/1991.zip download/nsf/1992.zip download/nsf/1993.zip download/nsf/1994.zip download/nsf/1995.zip download/nsf/1996.zip download/nsf/1997.zip download/nsf/1998.zip download/nsf/1999.zip download/nsf/2000.zip download/nsf/2001.zip download/nsf/2002.zip download/nsf/2003.zip download/nsf/2004.zip download/nsf/2005.zip download/nsf/2006.zip download/nsf/2007.zip download/nsf/2008.zip download/nsf/2009.zip download/nsf/2010.zip download/nsf/2011.zip download/nsf/2012.zip download/nsf/2013.zip download/nsf/2014.zip download/nsf/2015.zip download/nsf/2016.zip download/nsf/2017.zip download/nsf/2018.zip download/nsf/2019.zip download/nsf/2020.zip 
 	touch $@
 
 download/nsf/1970.zip: |download/nsf
@@ -265,3 +268,5 @@ download/nsf/2018.zip: |download/nsf
 download/nsf/2019.zip: |download/nsf
 	cd download/nsf && wget -nc --content-disposition https://www.nsf.gov/awardsearch/download?DownloadFileName=2019\&All=true
 
+download/nsf/2020.zip: |download/nsf
+	cd download/nsf && wget -nc --content-disposition https://www.nsf.gov/awardsearch/download?DownloadFileName=2020\&All=true
