@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Venue Analytics: A Simple Alternative to Citation-Based Metrics</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		html,
+		body,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		}
+
+		< !-- .cite {
+			background: #f0f0f0;
+			padding: 10px;
+			font-size: 18px
+		}
+		-->.cite {
+			padding: 0px;
+			background: #ffffff;
+			font-size: 20px
+		}
+
+		.card {
+			border: 1px solid #ccc
+		}
+
+		img {
+			margin-bottom: -6px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #2196F3;
+		}
+
+		.layered-paper-big {
+			/* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+			box-shadow:
+				0px 0px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The top layer shadow */
+				5px 5px 0 0px #fff,
+				/* The second layer */
+				5px 5px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The second layer shadow */
+				10px 10px 0 0px #fff,
+				/* The third layer */
+				10px 10px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The third layer shadow */
+				15px 15px 0 0px #fff,
+				/* The fourth layer */
+				15px 15px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The fourth layer shadow */
+				20px 20px 0 0px #fff,
+				/* The fifth layer */
+				20px 20px 1px 1px rgba(0, 0, 0, 0.35),
+				/* The fifth layer shadow */
+				25px 25px 0 0px #fff,
+				/* The fifth layer */
+				25px 25px 1px 1px rgba(0, 0, 0, 0.35);
+			/* The fifth layer shadow */
+			margin-left: 10px;
+			margin-right: 60px;
+		}
+
+		table {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			border-collapse: collapse;
+		}
+
+		table> :is(thead, tbody)>tr> :is(th, td) {
+			padding: 3px;
+			text-align: center;
+		}
+
+		table>thead>tr> :is(th, td) {
+			border-top: 2px solid;
+			border-bottom: 1px solid;
+		}
+
+		table>tbody>tr:last-child> :is(th, td) {
+			border-bottom: 2px solid;
+		}
+
+		table>tbody {
+			border-top: 2px solid;
+			border-bottom: 1px solid;
+		}
+	</style>
+</head>
+
+<body class="w3-white">
+	<!-- Page Container -->
+	<div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:960px;">
+
+		<!-- The Grid -->
+		<div class="w3-row-padding">
+
+			<!-- paper container -->
+			<div class="w3-display-container w3-row w3-white w3-margin-bottom">
+				<div class="w3-center">
+					<h1>Venue Analytics: A Simple Alternative to Citation-Based Metrics</h1>
+					<h5><a href="https://leonidk.com/">Leonid Keselman</a></h5>
+					<h5><em>JCDL 2019</em></h5>
+				</div>
+
+				<div class="w3-center">
+					<h3>[<a href="https://github.com/leonidk/venue_scores">Code</a>] &emsp; [<a href="https://arxiv.org/pdf/1904.12573.pdf">Paper</a>]  &emsp; [<a href="images/jcdl2019.pdf">Slides</a>]</h3>
+				</div>
+
+				<hr>
+				<div class="w3-display-container w3-row w3-white w3-margin-bottom w3-center">
+					<img src="images/All_t_year_size.png" style="width:100%">
+
+				</div>
+				<hr>
+				<div class="w3-center">
+					<h2>Abstract</h2>
+				</div>
+				<p>We present a method for automatically organizing and evaluating the quality of different publishing venues in Computer Science. Since this method only requires paper publication data as its input, we can demonstrate our method on a large portion of the DBLP dataset, spanning 50 years, with millions of authors and thousands of publishing venues. By formulating venue authorship as a regression problem and targeting metrics of interest, we obtain venue scores for every conference and journal in our dataset. The obtained scores can also provide a per-year model of conference quality, showing how fields develop and change over time. Additionally, these venue scores can be used to evaluate individual academic authors and academic institutions. We show that using venue scores to evaluate both authors and institutions produces quantitative measures that are comparable to approaches using citations or peer assessment. In contrast to many other existing evaluation metrics, our use of large-scale, openly available data enables this approach to be repeatable and transparent.</p>
+				<hr>
+
+
+
+				<div class="w3-center">
+					<h2>Visualizations</h2>
+				</div>
+				<div class="w3-center">
+					<p><strong>Overview of Computer Science: </strong>a t-SNE embedding of the major publishing venues. </p>
+				</div>
+				<img src="images/tsne1.png" style="width:100%">
+				<div class="w3-center">
+					<p><strong>Embedding of Faculty</strong> and <strong>Heatmap of University CS departments</strong></p>
+				</div>
+
+				<img src="images/cmu_faculty6.png" style="width:48%">
+				<img src="images/fingers3.png" style="width:48%">
+
+
+
+				<hr>
+				<div class="w3-row w3-margin" style="padding-bottom:2em">
+					<div class="w3-center">
+						<h2>Paper</h2>
+					</div>
+					<div class="w3-col s0 m1 l2" style="height:10px"></div>
+					<div class="w3-col s6 m3 l2">
+						<img class="layered-paper-big" src="images/page1.png" style="width:100%;min-height:200px; margin-right:3em">
+					</div>
+					<div class="w3-col s6 m7 l6" style="padding-left:5em">
+						<div class="cite">
+							Leonid Keselman
+							<i>Venue Analytics: A Simple Alternative to Citation-Based Metrics</i>
+							JCDL 2019.
+						</div>
+						<h3>[<a href="https://arxiv.org/pdf/1904.12573.pdf">pdf</a>]&emsp;[<a href="bib.txt">bibtex</a>] </h3>
+					</div>
+					<div class="w3-col s0 m1 l2" style="height:10px"></div>
+				</div>
+				<hr>
+			</div>
+			<!-- end paper container -->
+
+		</div><!-- End Grid -->
+	</div><!-- End Page Container -->
+
+</body>
+
+</html>

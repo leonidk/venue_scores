@@ -1,0 +1,8 @@
+
+@InProceedings{keselman2019venue,
+    author    = {Leonid Keselman},
+    title     = {Venue Analytics: A Simple Alternative to Citation-Based Metrics},
+    booktitle = {ACM/IEEE Joint Conference on Digital Libraries},
+    year      = {2019},
+    doi       = {10.1109/JCDL.2019.00052}
+}
