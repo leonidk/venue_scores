@@ -83,7 +83,7 @@ parsed_files.pkl.gz: faculty-affiliations.csv download/dblp.xml.gz download/dblp
 
 cleaned_venues_to_weights.py: cleaned_venues_to_weights.ipynb
 	rm -f cleaned_venues_to_weights.py
-	jupyter nbconvert --to script cleaned_venues_to_weights.ipynb
+	jupyter nbconvert --to python cleaned_venues_to_weights.ipynb
 
 
 weights_faculty_above6_linear_2_75_25_0.pkl: useful_papers.pkl.gz cleaned_venues_to_weights.py
