@@ -254,7 +254,7 @@ areadict = {
     # AAAI listed to account for AAAI/IAAI joint conference
     # SIGGRAPH
     # - special handling of TOG to select SIGGRAPH and SIGGRAPH Asia
-    'siggraph': ['SIGGRAPH'],
+    'siggraph': ['SIGGRAPH','SIGGRAPH Conference Paper Track'],
 #    'siggraph' : ['SIGGRAPH'],
     'siggraph-asia' : ['SIGGRAPH Asia'],
     # SIGIR
@@ -435,20 +435,6 @@ areadict = {
     # AAAI listed to account for AAAI/IAAI joint conference
     # SIGGRAPH
     # - special handling of TOG to select SIGGRAPH and SIGGRAPH Asia
-    Area("siggraph"): [
-        Conference("ACM Trans. Graph."),
-        Conference("SIGGRAPH"),
-        Conference("SIGGRAPH Conference Paper Track"),
-    ],
-    #    'siggraph' : ['SIGGRAPH'],
-    Area("siggraph-asia"): [
-        Conference("ACM Trans. Graph."),
-        Conference("SIGGRAPH Asia"),
-    ],
-    Area("eurographics"): [
-        Conference("Comput. Graph. Forum"),
-        Conference("EUROGRAPHICS"),
-    ],
     # SIGIR
     # 'ir': ['WWW', 'SIGIR'],
     Area("sigir"): [Conference("SIGIR")],
@@ -1217,9 +1203,6 @@ for event, elem in parser:
             exceptionConference |= venue == 'FAST' and year == 2012
             if exceptionConference:
                 eb_toofew = False
-
-
-
 
         insert_data = False if (venue is None or year < 1970 or len(authors) == 0) else insert_data
         #if 'Jonathan T. Moon' in authors:
