@@ -113,10 +113,8 @@ plus-minus.py: plus-minus.ipynb
 apmTrue.npy: clf_gold.pkl.npy plus-minus.py
 	FIT_INTERCEPT=1 python3 plus-minus.py
 
-
 apmFalse.npy: clf_gold.pkl.npy plus-minus.py
 	FIT_INTERCEPT=0 python3 plus-minus.py
-
 
 # folder for downloading
 download/nsf: | download
