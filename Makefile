@@ -23,7 +23,7 @@ CONF_NUM_NORM = 1
 # clipping coeff for combining weights
 COMBINE_CLIP = 14
 
-all:   clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx
+all:  apmTrue.npy apmFalse.npy clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx
 .PHONY: all cleanup
 
 cleanup:
@@ -106,12 +106,21 @@ useful_papers.pkl.gz: parsed_files.pkl.gz dblp-aliases.csv
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleanup_venues.ipynb
 	rm cleanup_venues.nbconvert.ipynb
 
+apmTrue.npy: clf_gold.pkl.npy
+	FIT_INTERCEPT=1 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute plus-minus.ipynb
+	rm plus-minus.nbconvert.ipynb
+
+apmFalse.npy: clf_gold.pkl.npy
+	FIT_INTERCEPT=0 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute plus-minus.ipynb
+	rm plus-minus.nbconvert.ipynb
+
 # folder for downloading
 download/nsf: | download
 	mkdir -p $@
 
 download:
 	mkdir -p $@
+
 
 nsf2.pkl: download/nsffile 
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute parse_nsf.ipynb
