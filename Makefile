@@ -106,13 +106,17 @@ useful_papers.pkl.gz: parsed_files.pkl.gz dblp-aliases.csv
 	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute cleanup_venues.ipynb
 	rm cleanup_venues.nbconvert.ipynb
 
-apmTrue.npy: clf_gold.pkl.npy
-	FIT_INTERCEPT=1 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute plus-minus.ipynb
-	rm plus-minus.nbconvert.ipynb
+plus-minus.py: plus-minus.ipynb
+	rm -f plus-minus.py
+	jupyter nbconvert --to python plus-minus.ipynb
 
-apmFalse.npy: clf_gold.pkl.npy
-	FIT_INTERCEPT=0 jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute plus-minus.ipynb
-	rm plus-minus.nbconvert.ipynb
+apmTrue.npy: clf_gold.pkl.npy plus-minus.py
+	FIT_INTERCEPT=1 python3 plus-minus.py
+
+
+apmFalse.npy: clf_gold.pkl.npy plus-minus.py
+	FIT_INTERCEPT=0 python3 plus-minus.py
+
 
 # folder for downloading
 download/nsf: | download
