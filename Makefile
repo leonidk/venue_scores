@@ -23,7 +23,7 @@ CONF_NUM_NORM = 1
 # clipping coeff for combining weights
 COMBINE_CLIP = 14
 
-all:  apmTrue.npy apmFalse.npy clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx
+all: scoresV2.pkl.gz clf_gold.pkl.npy useful_papers.pkl.gz  new_pagerank_people.pkl  download/nsffile acm2017/all_professors.xlsx acm2017/all_departments.xlsx
 .PHONY: all cleanup
 
 cleanup:
