@@ -116,6 +116,10 @@ apmTrue.npy: clf_gold.pkl.npy plus-minus.py
 apmFalse.npy: clf_gold.pkl.npy plus-minus.py
 	FIT_INTERCEPT=0 python3 plus-minus.py
 
+scoresV2.pkl.gz: clf_gold.pkl.npy apmFalse.npy apmTrue.npy
+	jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute create_scores.ipynb
+	rm create_scores.nbconvert.ipynb
+
 # folder for downloading
 download/nsf: | download
 	mkdir -p $@
