@@ -31,13 +31,13 @@ areadict = {
     #
     # SIGPLAN
 #    'plan' : ['POPL', 'PLDI', 'PACMPL'],  # PACMPL, issue POPL
-    'iclr':['ICLR','ICLR Poster'],
     '3dv': ['3DV','3DIMPVT','3DPVT','3DIM'],
     'i3d': ['I3D','SI3D'],
     'wacv': ['WACV','WACV/MOTION'],
     'isccaaa': ['ICCASA/ICTCC','ICCASA','ICTCC'],
     'tcc': ['TCC','TCC (A1)','TCC (A2)','TCC (B1)','TCC (B2)'],
     'popl' : ['POPL'],
+    'facct': ['FAccT','FAT*'],
     'pldi' : ['PLDI'],
     'HPCC' : ['HPCC','HPCC/CSS/ICESS','HPCC/SmartCity/DSS'],
     'pkdd' : ['ECML/PKDD','ECML','PKDD'],
@@ -59,7 +59,7 @@ areadict = {
     # "Next tier" - see csrankings.ts
     'oopsla' : ['OOPSLA'], # Next tier
     'icfp'   : ['ICFP'],   # Next tier
-    'pacmpl' : ['PACMPL'], # Special PACMPL handling below
+    #'pacmpl' : ['PACMPL'], # Special PACMPL handling below
     'sbp': ['SBP','SBP-BRiMS'],
     'jcdl': ['JCDL','ACM DL','ADL','Digital Libraries','DL'],
     'db/conf/dna': ['DNA', 'DNA Computing'] ,
@@ -67,7 +67,7 @@ areadict = {
     'db/conf/dft': ['DFT', 'DFTS'] ,
     'db/conf/nma': ['Numerical Methods and Applications','NMA','Numerical Methods and Application'] ,
     'db/conf/ppopp': ['PPOPP', 'PPoPP'] ,
-    'db/conf/approx': ['APPROX-RANDOM', 'APPROX','RANDOM'] ,
+    'db/conf/approx': ['APPROX-RANDOM', 'APPROX','RANDOM','APPROX/RANDOM'] ,
     # SIGSOFT
     #    'soft': ['ICSE', 'ICSE (1)', 'ICSE (2)', 'SIGSOFT FSE', 'ESEC/SIGSOFT FSE'],
     'icse' : ['ICSE', 'ICSE (1)'],
@@ -97,6 +97,7 @@ areadict = {
     'db/conf/iwcf': ['IWCF', 'ICWF'] ,
     'db/conf/sigcpr': ['CPR', 'SIGCPR', 'SIGMIS-CPR'] ,
     'db/conf/ifip11-4': ['iNetSec', 'iNetSeC'] ,
+    'ccsw': ['CCSW', 'CCSW@CCS'],
     'db/conf/iccS': ['ICCS','International Conference on Computational Science'] ,
     'db/conf/3dica': ['Three-Dimensional Image Capture and Applications', 'Three-Dimensional Image Processing 3DIP and Applications', 'Three-Dimensional Imaging, Interaction, and Measurement', 'Three-Dimensional Image Processing, Measurement 3DIPM, and Applications', 'Three-Dimensional Image Capture', '3D Image Processing, Measurement 3DIPM, and Applications'] ,
     'db/conf/its': ['ITS','Intelligent Tutoring Systems'] ,
@@ -427,7 +428,7 @@ areadict = {
         Conference("ICML (2)"),
         Conference("ICML (3)"),
     ],
-    Area("iclr"): [Conference("ICLR")],
+    Area("iclr"): [Conference("ICLR"),Conference("ICLR Poster")],
     Area("kdd"): [Conference("KDD")],
     # 'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI'],
     Area("aaai"): [Conference("AAAI"), Conference("AAAI/IAAI")],
@@ -1089,8 +1090,8 @@ for event, elem in parser:
                     if pseudovolume < int(startpv) or pseudovolume > int(endpv):
                         venue = 'EMSOFT'
 
-        if venue == 'PACMPL':
-            venue = number
+        if inverse_area_dict.get(venue,venue) == 'PACMPL':
+            venue = "".join(filter(lambda x: not x.isdigit(), number))
         elif venue == 'ACM Trans. Graph.':
             if year in TOG_SIGGRAPH_Volume:
                 (vol, num) = TOG_SIGGRAPH_Volume[year]
@@ -1222,10 +1223,10 @@ for event, elem in parser:
 
             data = (elem.tag,title, authors, venue, pages, startPage,year,volume,number,url,publtype,eb_toofew,eb_skip)
             main_log.append(data)
-            if 'Angela Dai' in authors:
-                print(data)
-            if 'Leonid Keselman' in authors:
-                print(data)
+           #if 'Angela Dai' in authors:
+            #    print(data)
+            #if 'Leonid Keselman' in authors:
+            #    print(data)
         #print(elem.tag,title, authors, venue, pages, startPage,year)
         #print(elem.text)
         #print([(s.tag,s.text, etree.tostring(sub)) for s in elem])
