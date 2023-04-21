@@ -429,6 +429,7 @@ areadict = {
         Conference("ICML (3)"),
     ],
     Area("iclr"): [Conference("ICLR"),Conference("ICLR Poster")],
+    Area("iclr workshop"): [Conference("ICLR Workshop"),Conference("ICLR Workshop Poster")],
     Area("kdd"): [Conference("KDD")],
     # 'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI'],
     Area("aaai"): [Conference("AAAI"), Conference("AAAI/IAAI")],
