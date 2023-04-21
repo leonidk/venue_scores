@@ -1190,6 +1190,8 @@ for event, elem in parser:
                 venue = (url.split('/')[:3])[-1]
         if pages == -1 and venue == 'ACM Conference on Computer and Communications Security':
             eb_toofew = True
+        if venue == 'JCDL' and year == 2022:
+            pages = 6
 
         if ((pages != -1) and (pages < 6)):
             eb_toofew = True
